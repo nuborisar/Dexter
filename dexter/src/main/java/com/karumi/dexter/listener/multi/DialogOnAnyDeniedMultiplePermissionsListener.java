@@ -21,8 +21,8 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.DrawableRes;
-import android.support.annotation.StringRes;
+import android.support.annotationox.DrawableRes;
+import android.support.annotationox.StringRes;
 import com.karumi.dexter.MultiplePermissionsReport;
 
 /**

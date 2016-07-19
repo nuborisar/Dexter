@@ -18,9 +18,9 @@ package com.karumi.dexter;
 
 import android.app.Activity;
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
+import android.support.annotationox.NonNull;
+import android.support.v4ox.app.ActivityCompat;
+import android.support.v4ox.content.ContextCompat;
 
 /**
  * Wrapper class for all the static calls to the Android permission system
