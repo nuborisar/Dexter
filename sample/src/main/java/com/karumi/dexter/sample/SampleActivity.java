@@ -151,7 +151,7 @@ public class SampleActivity extends Activity {
         feedbackView.setText(isPermanentlyDenied
                 ? R.string.permission_permanently_denied_feedback
                 : R.string.permission_denied_feedback);
-        
+
     }
 
     private void createPermissionListeners() {

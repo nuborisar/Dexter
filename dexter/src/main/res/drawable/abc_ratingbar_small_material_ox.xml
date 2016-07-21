@@ -14,6 +14,14 @@
      limitations under the License.
 -->
 
-<ripple xmlns:android="http://schemas.android.com/apk/res/android"
-        android:color="@color/abc_color_highlight_material"
-        android:radius="20dp" />
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background"
+          android:drawable="@drawable/abc_ic_star_black_16dp_ox" />
+    <item android:id="@android:id/secondaryProgress"
+          android:drawable="@drawable/abc_ic_star_half_black_16dp_ox" />
+    <item android:id="@android:id/progress">
+        <bitmap
+                android:src="@drawable/abc_ic_star_black_16dp_ox"
+                android:tileModeX="repeat"/>
+    </item>
+</layer-list>

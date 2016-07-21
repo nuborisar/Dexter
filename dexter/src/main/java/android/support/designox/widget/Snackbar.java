@@ -571,7 +571,7 @@ public final class Snackbar {
                     }).start();
         } else {
             Animation anim = AnimationUtils.loadAnimation(mView.getContext(),
-                    R.anim.design_snackbar_in);
+                    R.anim.design_snackbar_in_ox);
             anim.setInterpolator(FAST_OUT_SLOW_IN_INTERPOLATOR);
             anim.setDuration(ANIMATION_DURATION);
             anim.setAnimationListener(new Animation.AnimationListener() {
@@ -618,7 +618,7 @@ public final class Snackbar {
                         }
                     }).start();
         } else {
-            Animation anim = AnimationUtils.loadAnimation(mView.getContext(), R.anim.design_snackbar_out);
+            Animation anim = AnimationUtils.loadAnimation(mView.getContext(), R.anim.design_snackbar_out_ox);
             anim.setInterpolator(FAST_OUT_SLOW_IN_INTERPOLATOR);
             anim.setDuration(ANIMATION_DURATION);
             anim.setAnimationListener(new Animation.AnimationListener() {

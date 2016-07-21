@@ -165,7 +165,7 @@ class FloatingActionButtonEclairMr1 extends FloatingActionButtonImpl {
         }
 
         Animation anim = android.view.animation.AnimationUtils.loadAnimation(
-                mView.getContext(), R.anim.design_fab_out);
+                mView.getContext(), R.anim.design_fab_out_ox);
         anim.setInterpolator(AnimationUtils.FAST_OUT_LINEAR_IN_INTERPOLATOR);
         anim.setDuration(SHOW_HIDE_ANIM_DURATION);
         anim.setAnimationListener(new AnimationUtils.AnimationListenerAdapter() {
@@ -194,7 +194,7 @@ class FloatingActionButtonEclairMr1 extends FloatingActionButtonImpl {
             mView.clearAnimation();
             mView.internalSetVisibility(View.VISIBLE, fromUser);
             Animation anim = android.view.animation.AnimationUtils.loadAnimation(
-                    mView.getContext(), R.anim.design_fab_in);
+                    mView.getContext(), R.anim.design_fab_in_ox);
             anim.setDuration(SHOW_HIDE_ANIM_DURATION);
             anim.setInterpolator(AnimationUtils.LINEAR_OUT_SLOW_IN_INTERPOLATOR);
             anim.setAnimationListener(new AnimationUtils.AnimationListenerAdapter() {

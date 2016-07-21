@@ -22,12 +22,12 @@
     <selector>
         <item android:state_checked="false" android:state_pressed="false">
             <layer-list>
-                <item android:drawable="@drawable/abc_spinner_mtrl_am_alpha" />
+                <item android:drawable="@drawable/abc_spinner_mtrl_am_alpha_ox" />
             </layer-list>
         </item>
         <item>
             <layer-list>
-                <item android:drawable="@drawable/abc_spinner_mtrl_am_alpha" />
+                <item android:drawable="@drawable/abc_spinner_mtrl_am_alpha_ox" />
             </layer-list>
         </item>
     </selector>
