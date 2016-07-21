@@ -143,7 +143,7 @@ public class SampleActivity extends Activity {
     public void showPermissionGranted(String permission) {
         TextView feedbackView = getFeedbackViewForPermission(permission);
         feedbackView.setText(R.string.permission_granted_feedback);
-        //  feedbackView.setTextColor(ContextCompat.getColor(this, R.color.permission_granted));
+
     }
 
     public void showPermissionDenied(String permission, boolean isPermanentlyDenied) {
@@ -151,7 +151,7 @@ public class SampleActivity extends Activity {
         feedbackView.setText(isPermanentlyDenied
                 ? R.string.permission_permanently_denied_feedback
                 : R.string.permission_denied_feedback);
-        //  feedbackView.setTextColor(ContextCompat.getColor(this, R.color.permission_denied));
+        
     }
 
     private void createPermissionListeners() {
