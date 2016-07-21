@@ -18,23 +18,28 @@ package android.support.designox.widget;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.util.Log;
 //import android.support.designox.R;
 import com.karumi.dexter.R;
 
 
 class ThemeUtils {
 
-    private static final int[] APPCOMPAT_CHECK_ATTRS = { R.attr.colorPrimary };
+    private static final int[] APPCOMPAT_CHECK_ATTRS = {R.attr.colorPrimary};
 
     static void checkAppCompatTheme(Context context) {
-        TypedArray a = context.obtainStyledAttributes(APPCOMPAT_CHECK_ATTRS);
-        final boolean failed = !a.hasValue(0);
-        if (a != null) {
-            a.recycle();
-        }
-        if (failed) {
-            throw new IllegalArgumentException("You need to use a Theme.AppCompat theme "
-                    + "(or descendant) with the design library.");
+        try {
+            TypedArray a = context.obtainStyledAttributes(APPCOMPAT_CHECK_ATTRS);
+            final boolean failed = !a.hasValue(0);
+            if (a != null) {
+                a.recycle();
+            }
+            if (failed) {
+                throw new IllegalArgumentException("You need to use a Theme.AppCompat theme "
+                        + "(or descendant) with the design library.");
+            }
+        } catch (Throwable th) {
+            Log.i("desingOX", th.getMessage());
         }
     }
 }

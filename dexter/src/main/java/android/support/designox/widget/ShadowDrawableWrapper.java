@@ -84,9 +84,9 @@ class ShadowDrawableWrapper extends DrawableWrapper {
             float shadowSize, float maxShadowSize) {
         super(content);
 
-        mShadowStartColor = resources.getColor(R.color.design_fab_shadow_start_color_ox);
-        mShadowMiddleColor = resources.getColor(R.color.design_fab_shadow_mid_color_ox);
-        mShadowEndColor = resources.getColor(R.color.design_fab_shadow_end_color_ox);
+        mShadowStartColor = resources.getColor(R.color.design_fab_shadow_start_color);
+        mShadowMiddleColor = resources.getColor(R.color.design_fab_shadow_mid_color);
+        mShadowEndColor = resources.getColor(R.color.design_fab_shadow_end_color);
 
         mCornerShadowPaint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.DITHER_FLAG);
         mCornerShadowPaint.setStyle(Paint.Style.FILL);

@@ -27,7 +27,8 @@ import java.util.List;
  */
 public class EmptyMultiplePermissionsListener implements MultiplePermissionsListener {
 
-  @Override public void onPermissionsChecked(MultiplePermissionsReport report) {
+  @Override public void onPermissionsChecked(MultiplePermissionsReport report)
+  {
 
   }
 

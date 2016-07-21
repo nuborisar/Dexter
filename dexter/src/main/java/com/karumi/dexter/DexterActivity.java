@@ -21,6 +21,9 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.WindowManager;
+
+import com.karumi.dexter.asv.MyActivityCompat;
+
 import java.util.Collection;
 import java.util.LinkedList;
 

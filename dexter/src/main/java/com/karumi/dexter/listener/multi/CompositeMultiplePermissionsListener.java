@@ -50,6 +50,7 @@ public class CompositeMultiplePermissionsListener implements MultiplePermissions
   }
 
   @Override public void onPermissionsChecked(MultiplePermissionsReport report) {
+    //todo asv
     for (MultiplePermissionsListener listener : listeners) {
       listener.onPermissionsChecked(report);
     }

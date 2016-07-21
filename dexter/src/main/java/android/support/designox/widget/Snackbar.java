@@ -34,6 +34,7 @@ import android.support.v4ox.view.ViewCompat;
 import android.support.v4ox.view.ViewPropertyAnimatorListenerAdapter;
 import android.text.TextUtils;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -75,33 +76,45 @@ public final class Snackbar {
      * @see Snackbar#setCallback(Callback)
      */
     public static abstract class Callback {
-        /** Indicates that the Snackbar was dismissed via a swipe.*/
+        /**
+         * Indicates that the Snackbar was dismissed via a swipe.
+         */
         public static final int DISMISS_EVENT_SWIPE = 0;
-        /** Indicates that the Snackbar was dismissed via an action click.*/
+        /**
+         * Indicates that the Snackbar was dismissed via an action click.
+         */
         public static final int DISMISS_EVENT_ACTION = 1;
-        /** Indicates that the Snackbar was dismissed via a timeout.*/
+        /**
+         * Indicates that the Snackbar was dismissed via a timeout.
+         */
         public static final int DISMISS_EVENT_TIMEOUT = 2;
-        /** Indicates that the Snackbar was dismissed via a call to {@link #dismiss()}.*/
+        /**
+         * Indicates that the Snackbar was dismissed via a call to {@link #dismiss()}.
+         */
         public static final int DISMISS_EVENT_MANUAL = 3;
-        /** Indicates that the Snackbar was dismissed from a new Snackbar being shown.*/
+        /**
+         * Indicates that the Snackbar was dismissed from a new Snackbar being shown.
+         */
         public static final int DISMISS_EVENT_CONSECUTIVE = 4;
 
-        /** @hide */
+        /**
+         * @hide
+         */
         @IntDef({DISMISS_EVENT_SWIPE, DISMISS_EVENT_ACTION, DISMISS_EVENT_TIMEOUT,
                 DISMISS_EVENT_MANUAL, DISMISS_EVENT_CONSECUTIVE})
         @Retention(RetentionPolicy.SOURCE)
-        public @interface DismissEvent {}
+        public @interface DismissEvent {
+        }
 
         /**
          * Called when the given {@link Snackbar} has been dismissed, either through a time-out,
          * having been manually dismissed, or an action being clicked.
          *
          * @param snackbar The snackbar which has been dismissed.
-         * @param event The event which caused the dismissal. One of either:
-         *              {@link #DISMISS_EVENT_SWIPE}, {@link #DISMISS_EVENT_ACTION},
-         *              {@link #DISMISS_EVENT_TIMEOUT}, {@link #DISMISS_EVENT_MANUAL} or
-         *              {@link #DISMISS_EVENT_CONSECUTIVE}.
-         *
+         * @param event    The event which caused the dismissal. One of either:
+         *                 {@link #DISMISS_EVENT_SWIPE}, {@link #DISMISS_EVENT_ACTION},
+         *                 {@link #DISMISS_EVENT_TIMEOUT}, {@link #DISMISS_EVENT_MANUAL} or
+         *                 {@link #DISMISS_EVENT_CONSECUTIVE}.
          * @see Snackbar#dismiss()
          */
         public void onDismissed(Snackbar snackbar, @DismissEvent int event) {
@@ -124,7 +137,8 @@ public final class Snackbar {
      */
     @IntDef({LENGTH_INDEFINITE, LENGTH_SHORT, LENGTH_LONG})
     @Retention(RetentionPolicy.SOURCE)
-    public @interface Duration {}
+    public @interface Duration {
+    }
 
     /**
      * Show the Snackbar indefinitely. This means that the Snackbar will be displayed from the time
@@ -174,34 +188,42 @@ public final class Snackbar {
 
     private final ViewGroup mTargetParent;
     private final Context mContext;
-    private final SnackbarLayout mView;
+    private SnackbarLayout mView;
     private int mDuration;
     private Callback mCallback;
 
-    private final AccessibilityManager mAccessibilityManager;
+    private AccessibilityManager mAccessibilityManager;
 
     private Snackbar(ViewGroup parent) {
         mTargetParent = parent;
         mContext = parent.getContext();
+        try {
+            ThemeUtils.checkAppCompatTheme(mContext);
 
-        ThemeUtils.checkAppCompatTheme(mContext);
-
-        LayoutInflater inflater = LayoutInflater.from(mContext);
+            LayoutInflater inflater = LayoutInflater.from(mContext);
         mView = (SnackbarLayout) inflater.inflate(
                 R.layout.design_layout_snackbar, mTargetParent, false);
 
-        mAccessibilityManager = (AccessibilityManager)
-                mContext.getSystemService(Context.ACCESSIBILITY_SERVICE);
+
+//            mView = (SnackbarLayout) inflater.inflate(
+//                    R.layout.mysnackbarlayout, mTargetParent, false);
+
+
+            mAccessibilityManager = (AccessibilityManager)
+                    mContext.getSystemService(Context.ACCESSIBILITY_SERVICE);
+        } catch (Throwable th) {
+            Log.d("Snackbar class", th.getMessage());
+        }
     }
 
     /**
      * Make a Snackbar to display a message
-     *
+     * <p/>
      * <p>Snackbar will try and find a parent view to hold Snackbar's view from the value given
      * to {@code view}. Snackbar will walk up the view tree trying to find a suitable parent,
      * which is defined as a {@link CoordinatorLayout} or the window decor's content view,
      * whichever comes first.
-     *
+     * <p/>
      * <p>Having a {@link CoordinatorLayout} in your view hierarchy allows Snackbar to enable
      * certain features, such as swipe-to-dismiss and automatically moving of widgets like
      * {@link FloatingActionButton}.
@@ -213,7 +235,7 @@ public final class Snackbar {
      */
     @NonNull
     public static Snackbar make(@NonNull View view, @NonNull CharSequence text,
-            @Duration int duration) {
+                                @Duration int duration) {
         Snackbar snackbar = new Snackbar(findSuitableParent(view));
         snackbar.setText(text);
         snackbar.setDuration(duration);
@@ -222,12 +244,12 @@ public final class Snackbar {
 
     /**
      * Make a Snackbar to display a message.
-     *
+     * <p/>
      * <p>Snackbar will try and find a parent view to hold Snackbar's view from the value given
      * to {@code view}. Snackbar will walk up the view tree trying to find a suitable parent,
      * which is defined as a {@link CoordinatorLayout} or the window decor's content view,
      * whichever comes first.
-     *
+     * <p/>
      * <p>Having a {@link CoordinatorLayout} in your view hierarchy allows Snackbar to enable
      * certain features, such as swipe-to-dismiss and automatically moving of widgets like
      * {@link FloatingActionButton}.
@@ -338,9 +360,16 @@ public final class Snackbar {
      */
     @NonNull
     public Snackbar setText(@NonNull CharSequence message) {
-        final TextView tv = mView.getMessageView();
-        tv.setText(message);
+        try {
+            final TextView tv = mView.getMessageView();
+            if (tv != null)
+                tv.setText(message);
+        }
+        catch (Throwable th){
+            Log.i("Snackbar setText", th.getMessage());
+        }
         return this;
+
     }
 
     /**
@@ -479,7 +508,8 @@ public final class Snackbar {
 
         mView.setOnAttachStateChangeListener(new SnackbarLayout.OnAttachStateChangeListener() {
             @Override
-            public void onViewAttachedToWindow(View v) {}
+            public void onViewAttachedToWindow(View v) {
+            }
 
             @Override
             public void onViewDetachedFromWindow(View v) {
@@ -551,10 +581,12 @@ public final class Snackbar {
                 }
 
                 @Override
-                public void onAnimationStart(Animation animation) {}
+                public void onAnimationStart(Animation animation) {
+                }
 
                 @Override
-                public void onAnimationRepeat(Animation animation) {}
+                public void onAnimationRepeat(Animation animation) {
+                }
             });
             mView.startAnimation(anim);
         }
@@ -596,10 +628,12 @@ public final class Snackbar {
                 }
 
                 @Override
-                public void onAnimationStart(Animation animation) {}
+                public void onAnimationStart(Animation animation) {
+                }
 
                 @Override
-                public void onAnimationRepeat(Animation animation) {}
+                public void onAnimationRepeat(Animation animation) {
+                }
             });
             mView.startAnimation(anim);
         }
@@ -650,6 +684,7 @@ public final class Snackbar {
 
         interface OnAttachStateChangeListener {
             void onViewAttachedToWindow(View v);
+
             void onViewDetachedFromWindow(View v);
         }
 
@@ -679,6 +714,9 @@ public final class Snackbar {
             // the correct Context.
             LayoutInflater.from(context).inflate(R.layout.design_layout_snackbar_include, this);
 
+
+            //LayoutInflater.from(context).inflate(R.layout.mysnackbarlayout, this);
+
             ViewCompat.setAccessibilityLiveRegion(this,
                     ViewCompat.ACCESSIBILITY_LIVE_REGION_POLITE);
             ViewCompat.setImportantForAccessibility(this,
@@ -689,7 +727,9 @@ public final class Snackbar {
         protected void onFinishInflate() {
             super.onFinishInflate();
             mMessageView = (TextView) findViewById(R.id.snackbar_text);
+            if (mMessageView == null) mMessageView = (TextView) findViewById(R.id.snackbar_textox);
             mActionView = (Button) findViewById(R.id.snackbar_action);
+            if (mActionView == null) mActionView = (Button) findViewById(R.id.snackbar_actionox);
         }
 
         TextView getMessageView() {
@@ -791,7 +831,7 @@ public final class Snackbar {
         }
 
         private boolean updateViewsWithinLayout(final int orientation,
-                final int messagePadTop, final int messagePadBottom) {
+                                                final int messagePadTop, final int messagePadBottom) {
             boolean changed = false;
             if (orientation != getOrientation()) {
                 setOrientation(orientation);
@@ -825,7 +865,7 @@ public final class Snackbar {
 
         @Override
         public boolean onInterceptTouchEvent(CoordinatorLayout parent, SnackbarLayout child,
-                MotionEvent event) {
+                                             MotionEvent event) {
             // We want to make sure that we disable any Snackbar timeouts if the user is
             // currently touching the Snackbar. We restore the timeout when complete
             if (parent.isPointInChildBounds(child, (int) event.getX(), (int) event.getY())) {

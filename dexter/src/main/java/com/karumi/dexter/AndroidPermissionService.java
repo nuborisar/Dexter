@@ -22,31 +22,36 @@ import android.support.annotationox.NonNull;
 import android.support.v4ox.app.ActivityCompat;
 import android.support.v4ox.content.ContextCompat;
 
+import com.karumi.dexter.asv.MyActivityCompat;
+
 /**
  * Wrapper class for all the static calls to the Android permission system
  */
 class AndroidPermissionService {
 
-  /**
-   * @see ContextCompat#checkSelfPermission
-   */
-  int checkSelfPermission(@NonNull Context context, @NonNull String permission) {
-    return ContextCompat.checkSelfPermission(context, permission);
-  }
+//    private final MyActivityCompat mMyActivityCompat;
+//
+//    public AndroidPermissionService(MyActivityCompat myActivityCompat) {
+//        mMyActivityCompat = myActivityCompat;
+//    }
 
-  /**
-   * @see ActivityCompat#requestPermissions
-   */
-  void requestPermissions(@NonNull Activity activity, @NonNull String[] permissions,
-      int requestCode) {
-    ActivityCompat.requestPermissions(activity, permissions, requestCode);
-  }
 
-  /**
-   * @see ActivityCompat#shouldShowRequestPermissionRationale
-   */
-  boolean shouldShowRequestPermissionRationale(@NonNull Activity activity,
-      @NonNull String permission) {
-    return ActivityCompat.shouldShowRequestPermissionRationale(activity, permission);
-  }
+    int checkSelfPermission(@NonNull Context context, @NonNull String permission) {
+        //return mMyActivityCompat.checkSelfPermission(context, permission);
+        return ContextCompat.checkSelfPermission(context, permission);
+    }
+
+
+    void requestPermissions(@NonNull Activity activity, @NonNull String[] permissions,
+                            int requestCode) {
+       // mMyActivityCompat.requestPermissions(activity, permissions, requestCode);
+        ActivityCompat.requestPermissions(activity, permissions, requestCode);
+    }
+
+
+    boolean shouldShowRequestPermissionRationale(@NonNull Activity activity,
+                                                 @NonNull String permission) {
+       // return mMyActivityCompat.shouldShowRequestPermissionRationale(activity, permission);
+       return ActivityCompat.shouldShowRequestPermissionRationale(activity, permission);
+    }
 }
