@@ -195,7 +195,7 @@ public class Toolbar extends ViewGroup {
     }
 
     public Toolbar(Context context, @Nullable AttributeSet attrs) {
-        this(context, attrs, R.attr.toolbarStyle);
+        this(context, attrs, R.attr.toolbarStyle_ox);
     }
 
     public Toolbar(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
@@ -1032,7 +1032,7 @@ public class Toolbar extends ViewGroup {
     private void ensureNavButtonView() {
         if (mNavButtonView == null) {
             mNavButtonView = new ImageButton(getContext(), null,
-                    R.attr.toolbarNavigationButtonStyle);
+                    R.attr.toolbarNavigationButtonStyle_ox);
             final LayoutParams lp = generateDefaultLayoutParams();
             lp.gravity = GravityCompat.START | (mButtonGravity & Gravity.VERTICAL_GRAVITY_MASK);
             mNavButtonView.setLayoutParams(lp);
@@ -1042,7 +1042,7 @@ public class Toolbar extends ViewGroup {
     private void ensureCollapseButtonView() {
         if (mCollapseButtonView == null) {
             mCollapseButtonView = new ImageButton(getContext(), null,
-                    R.attr.toolbarNavigationButtonStyle);
+                    R.attr.toolbarNavigationButtonStyle_ox);
             mCollapseButtonView.setImageDrawable(mCollapseIcon);
             mCollapseButtonView.setContentDescription(mCollapseDescription);
             final LayoutParams lp = generateDefaultLayoutParams();

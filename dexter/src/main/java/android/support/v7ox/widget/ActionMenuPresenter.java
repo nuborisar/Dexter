@@ -610,7 +610,7 @@ class ActionMenuPresenter extends BaseMenuPresenter
         private final float[] mTempPts = new float[2];
 
         public OverflowMenuButton(Context context) {
-            super(context, null, R.attr.actionOverflowButtonStyle);
+            super(context, null, R.attr.actionOverflowButtonStyle_ox);
 
             setClickable(true);
             setFocusable(true);
@@ -696,7 +696,7 @@ class ActionMenuPresenter extends BaseMenuPresenter
 
         public OverflowPopup(Context context, MenuBuilder menu, View anchorView,
                 boolean overflowOnly) {
-            super(context, menu, anchorView, overflowOnly, R.attr.actionOverflowMenuStyle);
+            super(context, menu, anchorView, overflowOnly, R.attr.actionOverflowMenuStyle_ox);
             setGravity(GravityCompat.END);
             setCallback(mPopupPresenterCallback);
         }
@@ -716,7 +716,7 @@ class ActionMenuPresenter extends BaseMenuPresenter
 
         public ActionButtonSubmenu(Context context, SubMenuBuilder subMenu) {
             super(context, subMenu, null, false,
-                    R.attr.actionOverflowMenuStyle);
+                    R.attr.actionOverflowMenuStyle_ox);
             mSubMenu = subMenu;
 
             MenuItemImpl item = (MenuItemImpl) subMenu.getItem();

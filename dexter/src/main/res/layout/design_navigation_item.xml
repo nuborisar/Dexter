@@ -17,8 +17,8 @@
 <android.support.design.internal.NavigationMenuItemView
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="?attr/listPreferredItemHeightSmall"
-        android:paddingLeft="?attr/listPreferredItemPaddingLeft"
-        android:paddingRight="?attr/listPreferredItemPaddingRight"
-        android:foreground="?attr/selectableItemBackground"
+        android:layout_height="?attr/listPreferredItemHeightSmall_ox"
+        android:paddingLeft="?attr/listPreferredItemPaddingLeft_ox"
+        android:paddingRight="?attr/listPreferredItemPaddingRight_ox"
+        android:foreground="?attr/selectableItemBackground_ox"
         android:focusable="true"/>

@@ -37,7 +37,7 @@
 
     <ImageView
             android:id="@+id/search_button"
-            style="?attr/actionButtonStyle"
+            style="?attr/actionButtonStyle_ox"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
@@ -101,7 +101,7 @@
                     android:paddingLeft="8dip"
                     android:paddingRight="8dip"
                     android:layout_gravity="center_vertical"
-                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:background="?attr/selectableItemBackgroundBorderless_ox"
                     android:focusable="true"
                     android:contentDescription="@string/abc_searchview_description_clear" />
 
@@ -120,7 +120,7 @@
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="16dip"
                     android:paddingRight="16dip"
-                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:background="?attr/selectableItemBackgroundBorderless_ox"
                     android:visibility="gone"
                     android:focusable="true"
                     android:contentDescription="@string/abc_searchview_description_submit" />
@@ -132,7 +132,7 @@
                     android:layout_gravity="center_vertical"
                     android:paddingLeft="16dip"
                     android:paddingRight="16dip"
-                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:background="?attr/selectableItemBackgroundBorderless_ox"
                     android:visibility="gone"
                     android:focusable="true"
                     android:contentDescription="@string/abc_searchview_description_voice" />

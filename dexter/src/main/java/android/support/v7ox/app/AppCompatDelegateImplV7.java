@@ -336,7 +336,7 @@ class AppCompatDelegateImplV7 extends AppCompatDelegateImplBase
     private ViewGroup createSubDecor() {
         TypedArray a = mContext.obtainStyledAttributes(R.styleable.AppCompatTheme);
 
-        if (!a.hasValue(R.styleable.AppCompatTheme_windowActionBar)) {
+        if (!a.hasValue(R.styleable.AppCompatTheme_windowActionBar_ox)) {
             a.recycle();
             throw new IllegalStateException(
                     "You need to use a Theme.AppCompat theme (or descendant) with this activity.");
@@ -344,14 +344,14 @@ class AppCompatDelegateImplV7 extends AppCompatDelegateImplBase
 
         if (a.getBoolean(R.styleable.AppCompatTheme_windowNoTitle, false)) {
             requestWindowFeature(Window.FEATURE_NO_TITLE);
-        } else if (a.getBoolean(R.styleable.AppCompatTheme_windowActionBar, false)) {
+        } else if (a.getBoolean(R.styleable.AppCompatTheme_windowActionBar_ox, false)) {
             // Don't allow an action bar if there is no title.
             requestWindowFeature(FEATURE_SUPPORT_ACTION_BAR);
         }
-        if (a.getBoolean(R.styleable.AppCompatTheme_windowActionBarOverlay, false)) {
+        if (a.getBoolean(R.styleable.AppCompatTheme_windowActionBarOverlay_ox, false)) {
             requestWindowFeature(FEATURE_SUPPORT_ACTION_BAR_OVERLAY);
         }
-        if (a.getBoolean(R.styleable.AppCompatTheme_windowActionModeOverlay, false)) {
+        if (a.getBoolean(R.styleable.AppCompatTheme_windowActionModeOverlay_ox, false)) {
             requestWindowFeature(FEATURE_ACTION_MODE_OVERLAY);
         }
         mIsFloating = a.getBoolean(R.styleable.AppCompatTheme_android_windowIsFloating, false);
@@ -376,7 +376,7 @@ class AppCompatDelegateImplV7 extends AppCompatDelegateImplBase
                  * ContextThemeWrapper pointing to actionBarTheme.
                  */
                 TypedValue outValue = new TypedValue();
-                mContext.getTheme().resolveAttribute(R.attr.actionBarTheme, outValue, true);
+                mContext.getTheme().resolveAttribute(R.attr.actionBarTheme_ox, outValue, true);
 
                 Context themedContext;
                 if (outValue.resourceId != 0) {
@@ -524,20 +524,20 @@ class AppCompatDelegateImplV7 extends AppCompatDelegateImplBase
         a.getValue(R.styleable.AppCompatTheme_windowMinWidthMajor, cfl.getMinWidthMajor());
         a.getValue(R.styleable.AppCompatTheme_windowMinWidthMinor, cfl.getMinWidthMinor());
 
-        if (a.hasValue(R.styleable.AppCompatTheme_windowFixedWidthMajor)) {
-            a.getValue(R.styleable.AppCompatTheme_windowFixedWidthMajor,
+        if (a.hasValue(R.styleable.AppCompatTheme_windowFixedWidthMajor_ox)) {
+            a.getValue(R.styleable.AppCompatTheme_windowFixedWidthMajor_ox,
                     cfl.getFixedWidthMajor());
         }
-        if (a.hasValue(R.styleable.AppCompatTheme_windowFixedWidthMinor)) {
-            a.getValue(R.styleable.AppCompatTheme_windowFixedWidthMinor,
+        if (a.hasValue(R.styleable.AppCompatTheme_windowFixedWidthMinor_ox)) {
+            a.getValue(R.styleable.AppCompatTheme_windowFixedWidthMinor_ox,
                     cfl.getFixedWidthMinor());
         }
-        if (a.hasValue(R.styleable.AppCompatTheme_windowFixedHeightMajor)) {
-            a.getValue(R.styleable.AppCompatTheme_windowFixedHeightMajor,
+        if (a.hasValue(R.styleable.AppCompatTheme_windowFixedHeightMajor_ox)) {
+            a.getValue(R.styleable.AppCompatTheme_windowFixedHeightMajor_ox,
                     cfl.getFixedHeightMajor());
         }
-        if (a.hasValue(R.styleable.AppCompatTheme_windowFixedHeightMinor)) {
-            a.getValue(R.styleable.AppCompatTheme_windowFixedHeightMinor,
+        if (a.hasValue(R.styleable.AppCompatTheme_windowFixedHeightMinor_ox)) {
+            a.getValue(R.styleable.AppCompatTheme_windowFixedHeightMinor_ox,
                     cfl.getFixedHeightMinor());
         }
         a.recycle();
@@ -725,7 +725,7 @@ class AppCompatDelegateImplV7 extends AppCompatDelegateImplBase
                     // Use the action bar theme.
                     final TypedValue outValue = new TypedValue();
                     final Resources.Theme baseTheme = mContext.getTheme();
-                    baseTheme.resolveAttribute(R.attr.actionBarTheme, outValue, true);
+                    baseTheme.resolveAttribute(R.attr.actionBarTheme_ox, outValue, true);
 
                     final Context actionBarContext;
                     if (outValue.resourceId != 0) {
@@ -741,14 +741,14 @@ class AppCompatDelegateImplV7 extends AppCompatDelegateImplBase
 
                     mActionModeView = new ActionBarContextView(actionBarContext);
                     mActionModePopup = new PopupWindow(actionBarContext, null,
-                            R.attr.actionModePopupWindowStyle);
+                            R.attr.actionModePopupWindowStyle_ox);
                     PopupWindowCompat.setWindowLayoutType(mActionModePopup,
                             WindowManager.LayoutParams.TYPE_APPLICATION);
                     mActionModePopup.setContentView(mActionModeView);
                     mActionModePopup.setWidth(ViewGroup.LayoutParams.MATCH_PARENT);
 
                     actionBarContext.getTheme().resolveAttribute(
-                            R.attr.actionBarSize, outValue, true);
+                            R.attr.actionBarSize_ox, outValue, true);
                     final int height = TypedValue.complexToDimensionPixelSize(outValue.data,
                             actionBarContext.getResources().getDisplayMetrics());
                     mActionModeView.setContentHeight(height);
@@ -1203,7 +1203,7 @@ class AppCompatDelegateImplV7 extends AppCompatDelegateImplBase
                 mDecorContentParent != null) {
             final TypedValue outValue = new TypedValue();
             final Resources.Theme baseTheme = context.getTheme();
-            baseTheme.resolveAttribute(R.attr.actionBarTheme, outValue, true);
+            baseTheme.resolveAttribute(R.attr.actionBarTheme_ox, outValue, true);
 
             Resources.Theme widgetTheme = null;
             if (outValue.resourceId != 0) {
@@ -1211,10 +1211,10 @@ class AppCompatDelegateImplV7 extends AppCompatDelegateImplBase
                 widgetTheme.setTo(baseTheme);
                 widgetTheme.applyStyle(outValue.resourceId, true);
                 widgetTheme.resolveAttribute(
-                        R.attr.actionBarWidgetTheme, outValue, true);
+                        R.attr.actionBarWidgetTheme_ox, outValue, true);
             } else {
                 baseTheme.resolveAttribute(
-                        R.attr.actionBarWidgetTheme, outValue, true);
+                        R.attr.actionBarWidgetTheme_ox, outValue, true);
             }
 
             if (outValue.resourceId != 0) {
@@ -1914,13 +1914,13 @@ class AppCompatDelegateImplV7 extends AppCompatDelegateImplBase
             widgetTheme.setTo(context.getTheme());
 
             // First apply the actionBarPopupTheme
-            widgetTheme.resolveAttribute(R.attr.actionBarPopupTheme, outValue, true);
+            widgetTheme.resolveAttribute(R.attr.actionBarPopupTheme_ox, outValue, true);
             if (outValue.resourceId != 0) {
                 widgetTheme.applyStyle(outValue.resourceId, true);
             }
 
             // Now apply the panelMenuListTheme
-            widgetTheme.resolveAttribute(R.attr.panelMenuListTheme, outValue, true);
+            widgetTheme.resolveAttribute(R.attr.panelMenuListTheme_ox, outValue, true);
             if (outValue.resourceId != 0) {
                 widgetTheme.applyStyle(outValue.resourceId, true);
             } else {
@@ -1934,7 +1934,7 @@ class AppCompatDelegateImplV7 extends AppCompatDelegateImplBase
 
             TypedArray a = context.obtainStyledAttributes(R.styleable.AppCompatTheme);
             background = a.getResourceId(
-                    R.styleable.AppCompatTheme_panelBackground, 0);
+                    R.styleable.AppCompatTheme_panelBackground_ox, 0);
             windowAnimations = a.getResourceId(
                     R.styleable.AppCompatTheme_android_windowAnimationStyle, 0);
             a.recycle();

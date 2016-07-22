@@ -120,7 +120,7 @@ public class AppCompatSpinner extends Spinner implements TintableBackgroundView 
      * @see #MODE_DROPDOWN
      */
     public AppCompatSpinner(Context context, int mode) {
-        this(context, null, R.attr.spinnerStyle, mode);
+        this(context, null, R.attr.spinnerStyle_ox, mode);
     }
 
     /**
@@ -131,7 +131,7 @@ public class AppCompatSpinner extends Spinner implements TintableBackgroundView 
      * @param attrs   The attributes of the XML tag that is inflating the view.
      */
     public AppCompatSpinner(Context context, AttributeSet attrs) {
-        this(context, attrs, R.attr.spinnerStyle);
+        this(context, attrs, R.attr.spinnerStyle_ox);
     }
 
     /**

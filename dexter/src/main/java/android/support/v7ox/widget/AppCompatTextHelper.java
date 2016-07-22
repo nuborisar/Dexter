@@ -40,7 +40,7 @@ class AppCompatTextHelper {
     private static final int[] VIEW_ATTRS = {android.R.attr.textAppearance,
             android.R.attr.drawableLeft, android.R.attr.drawableTop,
             android.R.attr.drawableRight, android.R.attr.drawableBottom };
-    private static final int[] TEXT_APPEARANCE_ATTRS = {R.attr.textAllCaps};
+    private static final int[] TEXT_APPEARANCE_ATTRS = {R.attr.textAllCaps_ox};
 
     final TextView mView;
 
@@ -84,13 +84,13 @@ class AppCompatTextHelper {
             boolean allCaps = false;
             boolean allCapsSet = false;
 
-            // First check TextAppearance's textAllCaps value
+            // First check TextAppearance's textAllCaps_ox value
             if (ap != -1) {
                 TypedArray appearance = context
                         .obtainStyledAttributes(ap, R.styleable.TextAppearance);
-                if (appearance.hasValue(R.styleable.TextAppearance_textAllCaps)) {
+                if (appearance.hasValue(R.styleable.TextAppearance_textAllCaps_ox) ){
                     allCapsSet = true;
-                    allCaps = appearance.getBoolean(R.styleable.TextAppearance_textAllCaps, false);
+                    allCaps = appearance.getBoolean(R.styleable.TextAppearance_textAllCaps_ox, false);
                 }
                 appearance.recycle();
             }
@@ -114,7 +114,7 @@ class AppCompatTextHelper {
         if (appearance.getBoolean(0, false)) {
             // This follows the logic in TextView.setTextAppearance that serves as an "overlay"
             // on the current state of the TextView. Here we only allow turning all-caps on when
-            // the passed style has textAllCaps attribute set to true.
+            // the passed style has textAllCaps_ox attribute set to true.
             setAllCaps(true);
         }
         appearance.recycle();

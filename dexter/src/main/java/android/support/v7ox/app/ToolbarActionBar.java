@@ -535,13 +535,13 @@ class ToolbarActionBar extends ActionBar {
             widgetTheme.setTo(context.getTheme());
 
             // First apply the actionBarPopupTheme
-            widgetTheme.resolveAttribute(R.attr.actionBarPopupTheme, outValue, true);
+            widgetTheme.resolveAttribute(R.attr.actionBarPopupTheme_ox, outValue, true);
             if (outValue.resourceId != 0) {
                 widgetTheme.applyStyle(outValue.resourceId, true);
             }
 
             // Apply the panelMenuListTheme
-            widgetTheme.resolveAttribute(R.attr.panelMenuListTheme, outValue, true);
+            widgetTheme.resolveAttribute(R.attr.panelMenuListTheme_ox, outValue, true);
             if (outValue.resourceId != 0) {
                 widgetTheme.applyStyle(outValue.resourceId, true);
             } else {

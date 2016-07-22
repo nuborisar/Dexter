@@ -25,7 +25,7 @@ import com.karumi.dexter.R;
 
 class ThemeUtils {
 
-    private static final int[] APPCOMPAT_CHECK_ATTRS = {R.attr.colorPrimary};
+    private static final int[] APPCOMPAT_CHECK_ATTRS = {R.attr.colorPrimary_ox};
 
     static void checkAppCompatTheme(Context context) {
         try {

@@ -62,7 +62,7 @@ abstract class AbsActionBarView extends ViewGroup {
         super(context, attrs, defStyle);
 
         final TypedValue tv = new TypedValue();
-        if (context.getTheme().resolveAttribute(R.attr.actionBarPopupTheme, tv, true)
+        if (context.getTheme().resolveAttribute(R.attr.actionBarPopupTheme_ox, tv, true)
                 && tv.resourceId != 0) {
             mPopupContext = new ContextThemeWrapper(context, tv.resourceId);
         } else {
@@ -79,7 +79,7 @@ abstract class AbsActionBarView extends ViewGroup {
         // Action bar can change size on configuration changes.
         // Reread the desired height from the theme-specified style.
         TypedArray a = getContext().obtainStyledAttributes(null, R.styleable.ActionBar,
-                R.attr.actionBarStyle, 0);
+                R.attr.actionBarStyle_ox, 0);
         setContentHeight(a.getLayoutDimension(R.styleable.ActionBar_height, 0));
         a.recycle();
 

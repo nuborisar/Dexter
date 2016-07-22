@@ -201,7 +201,7 @@ public class ScrollingTabContainerView extends HorizontalScrollView
 
     private LinearLayoutCompat createTabLayout() {
         final LinearLayoutCompat tabLayout = new LinearLayoutCompat(getContext(), null,
-                R.attr.actionBarTabBarStyle);
+                R.attr.actionBarTabBarStyle_ox);
         tabLayout.setMeasureWithLargestChildEnabled(true);
         tabLayout.setGravity(Gravity.CENTER);
         tabLayout.setLayoutParams(new LinearLayoutCompat.LayoutParams(
@@ -211,7 +211,7 @@ public class ScrollingTabContainerView extends HorizontalScrollView
 
     private Spinner createSpinner() {
         final Spinner spinner = new AppCompatSpinner(getContext(), null,
-                R.attr.actionDropDownStyle);
+                R.attr.actionDropDownStyle_ox);
         spinner.setLayoutParams(new LinearLayoutCompat.LayoutParams(
                 LinearLayoutCompat.LayoutParams.WRAP_CONTENT,
                 LinearLayoutCompat.LayoutParams.MATCH_PARENT));
@@ -387,11 +387,11 @@ public class ScrollingTabContainerView extends HorizontalScrollView
         private View mCustomView;
 
         public TabView(Context context, ActionBar.Tab tab, boolean forList) {
-            super(context, null, R.attr.actionBarTabStyle);
+            super(context, null, R.attr.actionBarTabStyle_ox);
             mTab = tab;
 
             TintTypedArray a = TintTypedArray.obtainStyledAttributes(context, null, BG_ATTRS,
-                    R.attr.actionBarTabStyle, 0);
+                    R.attr.actionBarTabStyle_ox, 0);
             if (a.hasValue(0)) {
                 setBackgroundDrawable(a.getDrawable(0));
             }
@@ -491,7 +491,7 @@ public class ScrollingTabContainerView extends HorizontalScrollView
                 if (hasText) {
                     if (mTextView == null) {
                         TextView textView = new AppCompatTextView(getContext(), null,
-                                R.attr.actionBarTabTextStyle);
+                                R.attr.actionBarTabTextStyle_ox);
                         textView.setEllipsize(TruncateAt.END);
                         FrameLayout.LayoutParams lp = new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT,
                                 FrameLayout.LayoutParams.WRAP_CONTENT);

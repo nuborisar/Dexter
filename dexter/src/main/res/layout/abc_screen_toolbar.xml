@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            style="?attr/actionBarStyle"
+            style="?attr/actionBarStyle_ox"
             android:touchscreenBlocksFocus="true"
             android:gravity="top">
 
@@ -38,15 +38,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:navigationContentDescription="@string/abc_action_bar_up_description"
-                style="?attr/toolbarStyle"/>
+                style="?attr/toolbarStyle_ox"/>
 
         <android.support.v7.widget.ActionBarContextView
                 android:id="@+id/action_context_bar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:visibility="gone"
-                android:theme="?attr/actionBarTheme"
-                style="?attr/actionModeStyle"/>
+                android:theme="?attr/actionBarTheme_ox"
+                style="?attr/actionModeStyle_ox"/>
 
     </android.support.v7.widget.ActionBarContainer>
 

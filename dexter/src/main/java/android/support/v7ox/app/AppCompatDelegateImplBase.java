@@ -143,7 +143,7 @@ abstract class AppCompatDelegateImplBase extends AppCompatDelegate {
         @Override
         public Drawable getThemeUpIndicator() {
             final TintTypedArray a = TintTypedArray.obtainStyledAttributes(
-                    getActionBarThemedContext(), null, new int[]{ R.attr.homeAsUpIndicator });
+                    getActionBarThemedContext(), null, new int[]{ R.attr.homeAsUpIndicator_ox });
             final Drawable result = a.getDrawable(0);
             a.recycle();
             return result;

@@ -104,7 +104,7 @@ public class ToolbarWidgetWrapper implements DecorToolbar {
 
         if (style) {
             final TintTypedArray a = TintTypedArray.obtainStyledAttributes(toolbar.getContext(),
-                    null, R.styleable.ActionBar, R.attr.actionBarStyle, 0);
+                    null, R.styleable.ActionBar, R.attr.actionBarStyle_ox, 0);
 
             final CharSequence title = a.getText(R.styleable.ActionBar_title);
             if (!TextUtils.isEmpty(title)) {
@@ -126,7 +126,7 @@ public class ToolbarWidgetWrapper implements DecorToolbar {
                 setIcon(icon);
             }
 
-            final Drawable navIcon = a.getDrawable(R.styleable.ActionBar_homeAsUpIndicator);
+            final Drawable navIcon = a.getDrawable(R.styleable.ActionBar_homeAsUpIndicator_ox);
             if (navIcon != null) {
                 setNavigationIcon(navIcon);
             }
@@ -525,7 +525,7 @@ public class ToolbarWidgetWrapper implements DecorToolbar {
 
     private void ensureSpinner() {
         if (mSpinner == null) {
-            mSpinner = new AppCompatSpinner(getContext(), null, R.attr.actionDropDownStyle);
+            mSpinner = new AppCompatSpinner(getContext(), null, R.attr.actionDropDownStyle_ox);
             Toolbar.LayoutParams lp = new Toolbar.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,
                     ViewGroup.LayoutParams.WRAP_CONTENT, Gravity.START | Gravity.CENTER_VERTICAL);
             mSpinner.setLayoutParams(lp);

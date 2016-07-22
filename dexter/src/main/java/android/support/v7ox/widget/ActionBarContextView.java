@@ -55,7 +55,7 @@ public class ActionBarContextView extends AbsActionBarView {
     }
 
     public ActionBarContextView(Context context, AttributeSet attrs) {
-        this(context, attrs, R.attr.actionModeStyle);
+        this(context, attrs, R.attr.actionModeStyle_ox);
     }
 
     public ActionBarContextView(Context context, AttributeSet attrs, int defStyle) {

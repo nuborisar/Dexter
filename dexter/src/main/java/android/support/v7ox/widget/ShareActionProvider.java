@@ -226,7 +226,7 @@ public class ShareActionProvider extends ActionProvider {
 
         // Lookup and set the expand action icon.
         TypedValue outTypedValue = new TypedValue();
-        mContext.getTheme().resolveAttribute(R.attr.actionModeShareDrawable, outTypedValue, true);
+        mContext.getTheme().resolveAttribute(R.attr.actionModeShareDrawable_ox, outTypedValue, true);
         Drawable drawable = AppCompatDrawableManager.get()
                 .getDrawable(mContext, outTypedValue.resourceId);
         activityChooserView.setExpandActivityOverflowButtonDrawable(drawable);

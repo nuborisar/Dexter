@@ -245,7 +245,7 @@ class AppCompatViewInflater {
         }
         if (useAppTheme && themeId == 0) {
             // ...if that didn't work, try reading app:theme (for legacy reasons) if enabled
-            themeId = a.getResourceId(R.styleable.View_theme, 0);
+            themeId = a.getResourceId(R.styleable.View_theme_ox, 0);
 
             if (themeId != 0) {
                 Log.i(LOG_TAG, "app:theme is now deprecated. "

@@ -34,7 +34,7 @@ import android.widget.Button;
  * A {@link Button} which supports compatible features on older version of the platform,
  * including:
  * <ul>
- *     <li>Supports {@link R.attr#textAllCaps} style attribute which works back to
+ *     <li>Supports {@link R.attr#textAllCaps_ox} style attribute which works back to
  *     {@link android.os.Build.VERSION_CODES#ECLAIR_MR1 Eclair MR1}.</li>
  *     <li>Allows dynamic tint of it background via the background tint methods in
  *     {@link android.support.v4.view.ViewCompat}.</li>

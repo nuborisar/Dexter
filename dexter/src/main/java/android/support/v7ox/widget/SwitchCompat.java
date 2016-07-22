@@ -165,7 +165,7 @@ public class SwitchCompat extends CompoundButton {
      * @param attrs Specification of attributes that should deviate from default styling.
      */
     public SwitchCompat(Context context, AttributeSet attrs) {
-        this(context, attrs, R.attr.switchStyle);
+        this(context, attrs, R.attr.switchStyle_ox);
     }
 
     /**
@@ -258,7 +258,7 @@ public class SwitchCompat extends CompoundButton {
 
         setSwitchTypefaceByIndex(typefaceIndex, styleIndex);
 
-        boolean allCaps = appearance.getBoolean(R.styleable.TextAppearance_textAllCaps, false);
+        boolean allCaps = appearance.getBoolean(R.styleable.TextAppearance_textAllCaps_ox, false);
         if (allCaps) {
             mSwitchTransformationMethod = new AllCapsTransformationMethod(getContext());
         } else {

@@ -121,7 +121,7 @@ public class ActionBarOverlayLayout extends ViewGroup implements DecorContentPar
     };
 
     static final int[] ATTRS = new int [] {
-            R.attr.actionBarSize,
+            R.attr.actionBarSize_ox,
             android.R.attr.windowContentOverlay
     };
 

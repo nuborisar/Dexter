@@ -221,7 +221,7 @@ public class WindowDecorActionBar extends ActionBar implements
 
         final TypedArray a = mContext.obtainStyledAttributes(null,
                 R.styleable.ActionBar,
-                R.attr.actionBarStyle, 0);
+                R.attr.actionBarStyle_ox, 0);
         if (a.getBoolean(R.styleable.ActionBar_hideOnContentScroll, false)) {
             setHideOnContentScrollEnabled(true);
         }
@@ -878,7 +878,7 @@ public class WindowDecorActionBar extends ActionBar implements
         if (mThemedContext == null) {
             TypedValue outValue = new TypedValue();
             Resources.Theme currentTheme = mContext.getTheme();
-            currentTheme.resolveAttribute(R.attr.actionBarWidgetTheme, outValue, true);
+            currentTheme.resolveAttribute(R.attr.actionBarWidgetTheme_ox, outValue, true);
             final int targetThemeRes = outValue.resourceId;
 
             if (targetThemeRes != 0) {

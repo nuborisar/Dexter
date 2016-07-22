@@ -41,7 +41,7 @@
                android:scaleType="centerInside"
                android:layout_alignParentTop="true"
                android:layout_alignParentBottom="true"
-               android:background="?attr/selectableItemBackground"
+               android:background="?attr/selectableItemBackground_ox"
                android:visibility="gone"
                style="@style/RtlOverlay.Widget.AppCompat.Search.DropDown.Query" />
 
@@ -61,7 +61,7 @@
          subtitle is visible or gone. -->
     <TextView android:id="@android:id/text2"
               style="?android:attr/dropDownItemStyle"
-              android:textAppearance="?attr/textAppearanceSearchResultSubtitle"
+              android:textAppearance="?attr/textAppearanceSearchResultSubtitle_ox"
               android:singleLine="true"
               android:layout_width="match_parent"
               android:layout_height="29dip"
@@ -75,7 +75,7 @@
          subtitle, it fills the parent. -->
     <TextView android:id="@android:id/text1"
               style="?android:attr/dropDownItemStyle"
-              android:textAppearance="?attr/textAppearanceSearchResultTitle"
+              android:textAppearance="?attr/textAppearanceSearchResultTitle_ox"
               android:singleLine="true"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"

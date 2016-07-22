@@ -270,7 +270,7 @@ public class SearchView extends LinearLayoutCompat implements CollapsibleActionV
     }
 
     public SearchView(Context context, AttributeSet attrs) {
-        this(context, attrs, R.attr.searchViewStyle);
+        this(context, attrs, R.attr.searchViewStyle_ox);
     }
 
     public SearchView(Context context, AttributeSet attrs, int defStyleAttr) {

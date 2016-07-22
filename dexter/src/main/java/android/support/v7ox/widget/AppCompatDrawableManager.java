@@ -227,21 +227,21 @@ public final class AppCompatDrawableManager {
         } else if (resId == R.drawable.abc_seekbar_track_material_ox) {
             LayerDrawable ld = (LayerDrawable) drawable;
             setPorterDuffColorFilter(ld.findDrawableByLayerId(android.R.id.background),
-                    ThemeUtils.getThemeAttrColor(context, R.attr.colorControlNormal), DEFAULT_MODE);
+                    ThemeUtils.getThemeAttrColor(context, R.attr.colorControlNormal_ox), DEFAULT_MODE);
             setPorterDuffColorFilter(ld.findDrawableByLayerId(android.R.id.secondaryProgress),
-                    ThemeUtils.getThemeAttrColor(context, R.attr.colorControlNormal), DEFAULT_MODE);
+                    ThemeUtils.getThemeAttrColor(context, R.attr.colorControlNormal_ox), DEFAULT_MODE);
             setPorterDuffColorFilter(ld.findDrawableByLayerId(android.R.id.progress),
-                    ThemeUtils.getThemeAttrColor(context, R.attr.colorControlActivated), DEFAULT_MODE);
+                    ThemeUtils.getThemeAttrColor(context, R.attr.colorControlActivated_ox), DEFAULT_MODE);
         } else if (resId == R.drawable.abc_ratingbar_indicator_material_ox
                 || resId == R.drawable.abc_ratingbar_small_material_ox) {
             LayerDrawable ld = (LayerDrawable) drawable;
             setPorterDuffColorFilter(ld.findDrawableByLayerId(android.R.id.background),
-                    ThemeUtils.getDisabledThemeAttrColor(context, R.attr.colorControlNormal),
+                    ThemeUtils.getDisabledThemeAttrColor(context, R.attr.colorControlNormal_ox),
                     DEFAULT_MODE);
             setPorterDuffColorFilter(ld.findDrawableByLayerId(android.R.id.secondaryProgress),
-                    ThemeUtils.getThemeAttrColor(context, R.attr.colorControlActivated), DEFAULT_MODE);
+                    ThemeUtils.getThemeAttrColor(context, R.attr.colorControlActivated_ox), DEFAULT_MODE);
             setPorterDuffColorFilter(ld.findDrawableByLayerId(android.R.id.progress),
-                    ThemeUtils.getThemeAttrColor(context, R.attr.colorControlActivated), DEFAULT_MODE);
+                    ThemeUtils.getThemeAttrColor(context, R.attr.colorControlActivated_ox), DEFAULT_MODE);
         } else {
             final boolean tinted = tintDrawableUsingColorFilter(context, resId, drawable);
             if (!tinted && failIfNotKnown) {
@@ -400,10 +400,10 @@ public final class AppCompatDrawableManager {
         int alpha = -1;
 
         if (arrayContains(COLORFILTER_TINT_COLOR_CONTROL_NORMAL, resId)) {
-            colorAttr = R.attr.colorControlNormal;
+            colorAttr = R.attr.colorControlNormal_ox;
             colorAttrSet = true;
         } else if (arrayContains(COLORFILTER_COLOR_CONTROL_ACTIVATED, resId)) {
-            colorAttr = R.attr.colorControlActivated;
+            colorAttr = R.attr.colorControlActivated_ox;
             colorAttrSet = true;
         } else if (arrayContains(COLORFILTER_COLOR_BACKGROUND_MULTIPLY, resId)) {
             colorAttr = android.R.attr.colorBackground;
@@ -490,7 +490,7 @@ public final class AppCompatDrawableManager {
                     || resId == R.drawable.abc_spinner_textfield_background_material_ox) {
                 tint = createSpinnerColorStateList(context);
             } else if (arrayContains(TINT_COLOR_CONTROL_NORMAL, resId)) {
-                tint = ThemeUtils.getThemeAttrColorStateList(context, R.attr.colorControlNormal);
+                tint = ThemeUtils.getThemeAttrColorStateList(context, R.attr.colorControlNormal_ox);
             } else if (arrayContains(TINT_COLOR_CONTROL_STATE_LIST, resId)) {
                 tint = createDefaultColorStateList(context);
             } else if (arrayContains(TINT_CHECKABLE_BUTTON_LIST, resId)) {
@@ -533,8 +533,8 @@ public final class AppCompatDrawableManager {
          * Order is important here. The default enabled state needs to go at the bottom.
          */
 
-        final int colorControlNormal = ThemeUtils.getThemeAttrColor(context, R.attr.colorControlNormal);
-        final int colorControlActivated = ThemeUtils.getThemeAttrColor(context, R.attr.colorControlActivated);
+        final int colorControlNormal = ThemeUtils.getThemeAttrColor(context, R.attr.colorControlNormal_ox);
+        final int colorControlActivated = ThemeUtils.getThemeAttrColor(context, R.attr.colorControlActivated_ox);
 
         final int[][] states = new int[7][];
         final int[] colors = new int[7];
@@ -542,7 +542,7 @@ public final class AppCompatDrawableManager {
 
         // Disabled state
         states[i] = ThemeUtils.DISABLED_STATE_SET;
-        colors[i] = ThemeUtils.getDisabledThemeAttrColor(context, R.attr.colorControlNormal);
+        colors[i] = ThemeUtils.getDisabledThemeAttrColor(context, R.attr.colorControlNormal_ox);
         i++;
 
         states[i] = ThemeUtils.FOCUSED_STATE_SET;
@@ -580,16 +580,16 @@ public final class AppCompatDrawableManager {
 
         // Disabled state
         states[i] = ThemeUtils.DISABLED_STATE_SET;
-        colors[i] = ThemeUtils.getDisabledThemeAttrColor(context, R.attr.colorControlNormal);
+        colors[i] = ThemeUtils.getDisabledThemeAttrColor(context, R.attr.colorControlNormal_ox);
         i++;
 
         states[i] = ThemeUtils.CHECKED_STATE_SET;
-        colors[i] = ThemeUtils.getThemeAttrColor(context, R.attr.colorControlActivated);
+        colors[i] = ThemeUtils.getThemeAttrColor(context, R.attr.colorControlActivated_ox);
         i++;
 
         // Default enabled state
         states[i] = ThemeUtils.EMPTY_STATE_SET;
-        colors[i] = ThemeUtils.getThemeAttrColor(context, R.attr.colorControlNormal);
+        colors[i] = ThemeUtils.getThemeAttrColor(context, R.attr.colorControlNormal_ox);
         i++;
 
         return new ColorStateList(states, colors);
@@ -606,7 +606,7 @@ public final class AppCompatDrawableManager {
         i++;
 
         states[i] = ThemeUtils.CHECKED_STATE_SET;
-        colors[i] = ThemeUtils.getThemeAttrColor(context, R.attr.colorControlActivated, 0.3f);
+        colors[i] = ThemeUtils.getThemeAttrColor(context, R.attr.colorControlActivated_ox, 0.3f);
         i++;
 
         // Default enabled state
@@ -623,7 +623,7 @@ public final class AppCompatDrawableManager {
         int i = 0;
 
         final ColorStateList thumbColor = ThemeUtils.getThemeAttrColorStateList(context,
-                R.attr.colorSwitchThumbNormal);
+                R.attr.colorSwitchThumbNormal_ox);
 
         if (thumbColor != null && thumbColor.isStateful()) {
             // If colorSwitchThumbNormal is a valid ColorStateList, extract the default and
@@ -635,7 +635,7 @@ public final class AppCompatDrawableManager {
             i++;
 
             states[i] = ThemeUtils.CHECKED_STATE_SET;
-            colors[i] = ThemeUtils.getThemeAttrColor(context, R.attr.colorControlActivated);
+            colors[i] = ThemeUtils.getThemeAttrColor(context, R.attr.colorControlActivated_ox);
             i++;
 
             // Default enabled state
@@ -647,16 +647,16 @@ public final class AppCompatDrawableManager {
 
             // Disabled state
             states[i] = ThemeUtils.DISABLED_STATE_SET;
-            colors[i] = ThemeUtils.getDisabledThemeAttrColor(context, R.attr.colorSwitchThumbNormal);
+            colors[i] = ThemeUtils.getDisabledThemeAttrColor(context, R.attr.colorSwitchThumbNormal_ox);
             i++;
 
             states[i] = ThemeUtils.CHECKED_STATE_SET;
-            colors[i] = ThemeUtils.getThemeAttrColor(context, R.attr.colorControlActivated);
+            colors[i] = ThemeUtils.getThemeAttrColor(context, R.attr.colorControlActivated_ox);
             i++;
 
             // Default enabled state
             states[i] = ThemeUtils.EMPTY_STATE_SET;
-            colors[i] = ThemeUtils.getThemeAttrColor(context, R.attr.colorSwitchThumbNormal);
+            colors[i] = ThemeUtils.getThemeAttrColor(context, R.attr.colorSwitchThumbNormal_ox);
             i++;
         }
 
@@ -670,27 +670,27 @@ public final class AppCompatDrawableManager {
 
         // Disabled state
         states[i] = ThemeUtils.DISABLED_STATE_SET;
-        colors[i] = ThemeUtils.getDisabledThemeAttrColor(context, R.attr.colorControlNormal);
+        colors[i] = ThemeUtils.getDisabledThemeAttrColor(context, R.attr.colorControlNormal_ox);
         i++;
 
         states[i] = ThemeUtils.NOT_PRESSED_OR_FOCUSED_STATE_SET;
-        colors[i] = ThemeUtils.getThemeAttrColor(context, R.attr.colorControlNormal);
+        colors[i] = ThemeUtils.getThemeAttrColor(context, R.attr.colorControlNormal_ox);
         i++;
 
         // Default enabled state
         states[i] = ThemeUtils.EMPTY_STATE_SET;
-        colors[i] = ThemeUtils.getThemeAttrColor(context, R.attr.colorControlActivated);
+        colors[i] = ThemeUtils.getThemeAttrColor(context, R.attr.colorControlActivated_ox);
         i++;
 
         return new ColorStateList(states, colors);
     }
 
     private ColorStateList createDefaultButtonColorStateList(Context context) {
-        return createButtonColorStateList(context, R.attr.colorButtonNormal);
+        return createButtonColorStateList(context, R.attr.colorButtonNormal_ox);
     }
 
     private ColorStateList createColoredButtonColorStateList(Context context) {
-        return createButtonColorStateList(context, R.attr.colorAccent);
+        return createButtonColorStateList(context, R.attr.colorAccent_ox);
     }
 
     private ColorStateList createButtonColorStateList(Context context, int baseColorAttr) {
@@ -699,11 +699,11 @@ public final class AppCompatDrawableManager {
         int i = 0;
 
         final int baseColor = ThemeUtils.getThemeAttrColor(context, baseColorAttr);
-        final int colorControlHighlight = ThemeUtils.getThemeAttrColor(context, R.attr.colorControlHighlight);
+        final int colorControlHighlight = ThemeUtils.getThemeAttrColor(context, R.attr.colorControlHighlight_ox);
 
         // Disabled state
         states[i] = ThemeUtils.DISABLED_STATE_SET;
-        colors[i] = ThemeUtils.getDisabledThemeAttrColor(context, R.attr.colorButtonNormal);
+        colors[i] = ThemeUtils.getDisabledThemeAttrColor(context, R.attr.colorButtonNormal_ox);
         i++;
 
         states[i] = ThemeUtils.PRESSED_STATE_SET;
@@ -729,15 +729,15 @@ public final class AppCompatDrawableManager {
 
         // Disabled state
         states[i] = ThemeUtils.DISABLED_STATE_SET;
-        colors[i] = ThemeUtils.getDisabledThemeAttrColor(context, R.attr.colorControlNormal);
+        colors[i] = ThemeUtils.getDisabledThemeAttrColor(context, R.attr.colorControlNormal_ox);
         i++;
 
         states[i] = ThemeUtils.NOT_PRESSED_OR_FOCUSED_STATE_SET;
-        colors[i] = ThemeUtils.getThemeAttrColor(context, R.attr.colorControlNormal);
+        colors[i] = ThemeUtils.getThemeAttrColor(context, R.attr.colorControlNormal_ox);
         i++;
 
         states[i] = ThemeUtils.EMPTY_STATE_SET;
-        colors[i] = ThemeUtils.getThemeAttrColor(context, R.attr.colorControlActivated);
+        colors[i] = ThemeUtils.getThemeAttrColor(context, R.attr.colorControlActivated_ox);
         i++;
 
         return new ColorStateList(states, colors);
@@ -750,11 +750,11 @@ public final class AppCompatDrawableManager {
 
         // Disabled state
         states[i] = ThemeUtils.DISABLED_STATE_SET;
-        colors[i] = ThemeUtils.getDisabledThemeAttrColor(context, R.attr.colorControlActivated);
+        colors[i] = ThemeUtils.getDisabledThemeAttrColor(context, R.attr.colorControlActivated_ox);
         i++;
 
         states[i] = ThemeUtils.EMPTY_STATE_SET;
-        colors[i] = ThemeUtils.getThemeAttrColor(context, R.attr.colorControlActivated);
+        colors[i] = ThemeUtils.getThemeAttrColor(context, R.attr.colorControlActivated_ox);
         i++;
 
         return new ColorStateList(states, colors);

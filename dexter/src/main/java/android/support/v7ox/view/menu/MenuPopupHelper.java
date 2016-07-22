@@ -79,11 +79,11 @@ public class MenuPopupHelper implements AdapterView.OnItemClickListener, View.On
     private int mDropDownGravity = Gravity.NO_GRAVITY;
 
     public MenuPopupHelper(Context context, MenuBuilder menu) {
-        this(context, menu, null, false, R.attr.popupMenuStyle);
+        this(context, menu, null, false, R.attr.popupMenuStyle_ox);
     }
 
     public MenuPopupHelper(Context context, MenuBuilder menu, View anchorView) {
-        this(context, menu, anchorView, false, R.attr.popupMenuStyle);
+        this(context, menu, anchorView, false, R.attr.popupMenuStyle_ox);
     }
 
     public MenuPopupHelper(Context context, MenuBuilder menu, View anchorView,

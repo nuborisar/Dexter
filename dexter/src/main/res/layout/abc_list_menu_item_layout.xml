@@ -17,7 +17,7 @@
 <android.support.v7.view.menu.ListMenuItemView
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="?attr/listPreferredItemHeightSmall">
+        android:layout_height="?attr/listPreferredItemHeightSmall_ox">
 
     <!-- Icon will be inserted here. -->
 
@@ -27,8 +27,8 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginLeft="?attr/listPreferredItemPaddingLeft"
-            android:layout_marginRight="?attr/listPreferredItemPaddingRight"
+            android:layout_marginLeft="?attr/listPreferredItemPaddingLeft_ox"
+            android:layout_marginRight="?attr/listPreferredItemPaddingRight_ox"
             android:duplicateParentState="true">
 
         <TextView
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
-            android:textAppearance="?attr/textAppearanceListItemSmall"
+            android:textAppearance="?attr/textAppearanceListItemSmall_ox"
             android:singleLine="true"
             android:duplicateParentState="true"
             android:ellipsize="marquee"

@@ -83,7 +83,7 @@ public class PopupMenu implements MenuBuilder.Callback, MenuPresenter.Callback {
      *        anchor.
      */
     public PopupMenu(Context context, View anchor, int gravity) {
-        this(context, anchor, gravity, R.attr.popupMenuStyle, 0);
+        this(context, anchor, gravity, R.attr.popupMenuStyle_ox, 0);
     }
 
     /**

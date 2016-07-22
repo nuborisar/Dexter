@@ -16,10 +16,10 @@
 -->
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
           android:layout_width="match_parent"
-          android:layout_height="?attr/listPreferredItemHeightSmall"
+          android:layout_height="?attr/listPreferredItemHeightSmall_ox"
           android:gravity="center_vertical|start"
           android:maxLines="1"
-          android:paddingLeft="?attr/listPreferredItemPaddingLeft"
-          android:paddingRight="?attr/listPreferredItemPaddingRight"
+          android:paddingLeft="?attr/listPreferredItemPaddingLeft_ox"
+          android:paddingRight="?attr/listPreferredItemPaddingRight_ox"
           android:textAppearance="@style/TextAppearance.AppCompat.Body2"
           android:textColor="?android:textColorSecondary"/>

@@ -20,7 +20,7 @@
         android:contentDescription="@string/abc_action_mode_done"
         android:focusable="true"
         android:clickable="true"
-        android:src="?attr/actionModeCloseDrawable"
-        style="?attr/actionModeCloseButtonStyle"
+        android:src="?attr/actionModeCloseDrawable_ox"
+        style="?attr/actionModeCloseButtonStyle_ox"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"/>

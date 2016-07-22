@@ -200,7 +200,7 @@ public class ListPopupWindow {
      * @param context Context used for contained views.
      */
     public ListPopupWindow(Context context) {
-        this(context, null, R.attr.listPopupWindowStyle);
+        this(context, null, R.attr.listPopupWindowStyle_ox);
     }
 
     /**
@@ -211,7 +211,7 @@ public class ListPopupWindow {
      * @param attrs   Attributes from inflating parent views used to style the popup.
      */
     public ListPopupWindow(Context context, AttributeSet attrs) {
-        this(context, attrs, R.attr.listPopupWindowStyle);
+        this(context, attrs, R.attr.listPopupWindowStyle_ox);
     }
 
     /**
@@ -1583,7 +1583,7 @@ public class ListPopupWindow {
          * @param context this view's context
          */
         public DropDownListView(Context context, boolean hijackFocus) {
-            super(context, null, R.attr.dropDownListViewStyle);
+            super(context, null, R.attr.dropDownListViewStyle_ox);
             mHijackFocus = hijackFocus;
             setCacheColorHint(0); // Transparent, since the background drawable could be anything.
         }

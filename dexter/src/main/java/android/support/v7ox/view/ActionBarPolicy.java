@@ -72,7 +72,7 @@ public class ActionBarPolicy {
 
     public int getTabContainerHeight() {
         TypedArray a = mContext.obtainStyledAttributes(null, R.styleable.ActionBar,
-                R.attr.actionBarStyle, 0);
+                R.attr.actionBarStyle_ox, 0);
         int height = a.getLayoutDimension(R.styleable.ActionBar_height, 0);
         Resources r = mContext.getResources();
         if (!hasEmbeddedTabs()) {

@@ -25,6 +25,6 @@
         android:paddingBottom="4dip"
         android:paddingLeft="8dip"
         android:paddingRight="8dip"
-        android:textAppearance="?attr/actionMenuTextAppearance"
-        android:textColor="?attr/actionMenuTextColor"
-        style="?attr/actionButtonStyle"/>
+        android:textAppearance="?attr/actionMenuTextAppearance_ox"
+        android:textColor="?attr/actionMenuTextColor_ox"
+        style="?attr/actionButtonStyle_ox"/>

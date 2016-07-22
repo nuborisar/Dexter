@@ -72,7 +72,7 @@ public class PagerTitleStrip extends ViewGroup implements ViewPager.Decor {
     };
 
     private static final int[] TEXT_ATTRS = new int[] {
-        0x0101038c // android.R.attr.textAllCaps
+        0x0101038c // android.R.attr.textAllCaps_ox
     };
 
     private static final float SIDE_ALPHA = 0.6f;

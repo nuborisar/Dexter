@@ -175,8 +175,8 @@ public class LinearLayoutCompat extends ViewGroup {
         mUseLargestChild = a.getBoolean(R.styleable.LinearLayoutCompat_measureWithLargestChild, false);
 
         setDividerDrawable(a.getDrawable(R.styleable.LinearLayoutCompat_divider));
-        mShowDividers = a.getInt(R.styleable.LinearLayoutCompat_showDividers, SHOW_DIVIDER_NONE);
-        mDividerPadding = a.getDimensionPixelSize(R.styleable.LinearLayoutCompat_dividerPadding, 0);
+        mShowDividers = a.getInt(R.styleable.LinearLayoutCompat_showDividers_ox, SHOW_DIVIDER_NONE);
+        mDividerPadding = a.getDimensionPixelSize(R.styleable.LinearLayoutCompat_dividerPadding_ox, 0);
 
         a.recycle();
     }
