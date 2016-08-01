@@ -126,11 +126,11 @@
     </style>
     <style name="Theme.Design.Light.NoActionBar">
         <item name="windowActionBar_ox">false</item>
-        <item name="windowNoTitle">true</item>
+        <item name="windowNoTitle_ox">true</item>
     </style>
     <style name="Theme.Design.NoActionBar">
         <item name="windowActionBar_ox">false</item>
-        <item name="windowNoTitle">true</item>
+        <item name="windowNoTitle_ox">true</item>
     </style>
     <style name="Widget.Design.AppBarLayout" parent="android:Widget">
         <item name="elevation">@dimen/design_appbar_elevation</item>
@@ -271,12 +271,117 @@
     </declare-styleable>
     <declare-styleable name="AppCompatTheme">
         <attr format="boolean" name="windowActionBar_ox"/>
-        <attr format="boolean" name="windowNoTitle"/>
+        <attr format="boolean" name="windowNoTitle_ox"/>
         <attr format="boolean" name="windowActionBarOverlay_ox"/>
         <attr format="boolean" name="windowActionModeOverlay_ox"/>
         <attr format="dimension|fraction" name="windowFixedWidthMajor_ox"/>
         <attr format="dimension|fraction" name="windowFixedHeightMinor_ox"/>
-        <attr format="dimension|fraction" name="windowFixedWidthMinor_ox"/><attr format="dimension|fraction" name="windowFixedHeightMajor_ox"/><attr format="dimension|fraction" name="windowMinWidthMajor"/><attr format="dimension|fraction" name="windowMinWidthMinor"/><attr name="android:windowIsFloating"/><attr name="android:windowAnimationStyle"/><attr format="reference" name="actionBarTabStyle_ox"/><attr format="reference" name="actionBarTabBarStyle_ox"/><attr format="reference" name="actionBarTabTextStyle_ox"/><attr format="reference" name="actionOverflowButtonStyle_ox"/><attr format="reference" name="actionOverflowMenuStyle_ox"/><attr format="reference" name="actionBarPopupTheme_ox"/><attr format="reference" name="actionBarStyle_ox"/><attr format="reference" name="actionBarSplitStyle_ox"/><attr format="reference" name="actionBarTheme_ox"/><attr format="reference" name="actionBarWidgetTheme_ox"/><attr format="dimension" name="actionBarSize_ox"><enum name="wrap_content" value="0"/></attr><attr format="reference" name="actionBarDivider_ox"/><attr format="reference" name="actionBarItemBackground_ox"/><attr format="reference" name="actionMenuTextAppearance_ox"/><attr format="color|reference" name="actionMenuTextColor_ox"/><attr format="reference" name="actionModeStyle_ox"/><attr format="reference" name="actionModeCloseButtonStyle_ox"/><attr format="reference" name="actionModeBackground_ox"/><attr format="reference" name="actionModeSplitBackground_ox"/><attr format="reference" name="actionModeCloseDrawable_ox"/><attr format="reference" name="actionModeCutDrawable_ox"/><attr format="reference" name="actionModeCopyDrawable_ox"/><attr format="reference" name="actionModePasteDrawable_ox"/><attr format="reference" name="actionModeSelectAllDrawable_ox"/><attr format="reference" name="actionModeShareDrawable_ox"/><attr format="reference" name="actionModeFindDrawable_ox"/><attr format="reference" name="actionModeWebSearchDrawable_ox"/><attr format="reference" name="actionModePopupWindowStyle_ox"/><attr format="reference" name="textAppearanceLargePopupMenu_ox"/><attr format="reference" name="textAppearanceSmallPopupMenu_ox"/><attr format="reference" name="dialogTheme"/><attr format="dimension" name="dialogPreferredPadding"/><attr format="reference" name="listDividerAlertDialog"/><attr format="reference" name="actionDropDownStyle_ox"/><attr format="dimension" name="dropdownListPreferredItemHeight_ox"/><attr format="reference" name="spinnerDropDownItemStyle_ox"/><attr format="reference" name="homeAsUpIndicator_ox"/><attr format="reference" name="actionButtonStyle_ox"/><attr format="reference" name="buttonBarStyle_ox"/><attr format="reference" name="buttonBarButtonStyle_ox"/><attr format="reference" name="selectableItemBackground_ox"/><attr format="reference" name="selectableItemBackgroundBorderless_ox"/><attr format="reference" name="borderlessButtonStyle"/><attr format="reference" name="dividerVertical_ox"/><attr format="reference" name="dividerHorizontal_ox"/><attr format="reference" name="activityChooserViewStyle_ox"/><attr format="reference" name="toolbarStyle_ox"/><attr format="reference" name="toolbarNavigationButtonStyle_ox"/><attr format="reference" name="popupMenuStyle_ox"/><attr format="reference" name="popupWindowStyle_ox"/><attr format="reference|color" name="editTextColor_ox"/><attr format="reference" name="editTextBackground_ox"/><attr format="reference" name="imageButtonStyle"/><attr format="reference" name="textAppearanceSearchResultTitle_ox"/><attr format="reference" name="textAppearanceSearchResultSubtitle_ox"/><attr format="reference|color" name="textColorSearchUrl_ox"/><attr format="reference" name="searchViewStyle_ox"/><attr format="dimension" name="listPreferredItemHeight_ox"/><attr format="dimension" name="listPreferredItemHeightSmall_ox"/><attr format="dimension" name="listPreferredItemHeightLarge_ox"/><attr format="dimension" name="listPreferredItemPaddingLeft_ox"/><attr format="dimension" name="listPreferredItemPaddingRight_ox"/><attr format="reference" name="dropDownListViewStyle_ox"/><attr format="reference" name="listPopupWindowStyle_ox"/><attr format="reference" name="textAppearanceListItem_ox"/><attr format="reference" name="textAppearanceListItemSmall_ox"/><attr format="reference" name="panelBackground_ox"/><attr format="dimension" name="panelMenuListWidth_ox"/><attr format="reference" name="panelMenuListTheme_ox"/><attr format="reference" name="listChoiceBackgroundIndicator_ox"/><attr format="color" name="colorPrimary_ox"/><attr format="color" name="colorPrimaryDark_ox"/><attr format="color" name="colorAccent_ox"/><attr format="color" name="colorControlNormal_ox"/><attr format="color" name="colorControlActivated_ox"/><attr format="color" name="colorControlHighlight_ox"/><attr format="color" name="colorButtonNormal_ox"/><attr format="color" name="colorSwitchThumbNormal_ox"/><attr format="reference" name="controlBackground"/><attr format="reference" name="alertDialogStyle"/><attr format="reference" name="alertDialogButtonGroupStyle"/><attr format="boolean" name="alertDialogCenterButtons"/><attr format="reference" name="alertDialogTheme"/><attr format="reference|color" name="textColorAlertDialogListItem"/><attr format="reference" name="buttonBarPositiveButtonStyle"/><attr format="reference" name="buttonBarNegativeButtonStyle"/><attr format="reference" name="buttonBarNeutralButtonStyle"/><attr format="reference" name="autoCompleteTextViewStyle"/><attr format="reference" name="buttonStyle"/><attr format="reference" name="buttonStyleSmall"/><attr format="reference" name="checkboxStyle"/><attr format="reference" name="checkedTextViewStyle"/><attr format="reference" name="editTextStyle"/><attr format="reference" name="radioButtonStyle"/><attr format="reference" name="ratingBarStyle"/><attr format="reference" name="ratingBarStyleIndicator"/><attr format="reference" name="ratingBarStyleSmall"/><attr format="reference" name="seekBarStyle"/><attr format="reference" name="spinnerStyle_ox"/><attr format="reference" name="switchStyle_ox"/></declare-styleable>
+        <attr format="dimension|fraction" name="windowFixedWidthMinor_ox"/>
+        <attr format="dimension|fraction" name="windowFixedHeightMajor_ox"/>
+        <attr format="dimension|fraction" name="windowMinWidthMajor_ox"/>
+        <attr format="dimension|fraction" name="windowMinWidthMinor_ox"/>
+        <attr name="android:windowIsFloating"/>
+        <attr name="android:windowAnimationStyle"/>
+        <attr format="reference" name="actionBarTabStyle_ox"/>
+        <attr format="reference" name="actionBarTabBarStyle_ox"/>
+        <attr format="reference" name="actionBarTabTextStyle_ox"/>
+        <attr format="reference" name="actionOverflowButtonStyle_ox"/>
+        <attr format="reference" name="actionOverflowMenuStyle_ox"/>
+        <attr format="reference" name="actionBarPopupTheme_ox"/>
+        <attr format="reference" name="actionBarStyle_ox"/>
+        <attr format="reference" name="actionBarSplitStyle_ox"/>
+        <attr format="reference" name="actionBarTheme_ox"/>
+        <attr format="reference" name="actionBarWidgetTheme_ox"/>
+        <attr format="dimension" name="actionBarSize_ox">
+            <enum name="wrap_content" value="0"/></attr>
+        <attr format="reference" name="actionBarDivider_ox"/>
+        <attr format="reference" name="actionBarItemBackground_ox"/>
+        <attr format="reference" name="actionMenuTextAppearance_ox"/>
+        <attr format="color|reference" name="actionMenuTextColor_ox"/>
+        <attr format="reference" name="actionModeStyle_ox"/>
+        <attr format="reference" name="actionModeCloseButtonStyle_ox"/>
+        <attr format="reference" name="actionModeBackground_ox"/>
+        <attr format="reference" name="actionModeSplitBackground_ox"/>
+        <attr format="reference" name="actionModeCloseDrawable_ox"/>
+        <attr format="reference" name="actionModeCutDrawable_ox"/>
+        <attr format="reference" name="actionModeCopyDrawable_ox"/>
+        <attr format="reference" name="actionModePasteDrawable_ox"/>
+        <attr format="reference" name="actionModeSelectAllDrawable_ox"/>
+        <attr format="reference" name="actionModeShareDrawable_ox"/>
+        <attr format="reference" name="actionModeFindDrawable_ox"/>
+        <attr format="reference" name="actionModeWebSearchDrawable_ox"/>
+        <attr format="reference" name="actionModePopupWindowStyle_ox"/>
+        <attr format="reference" name="textAppearanceLargePopupMenu_ox"/>
+        <attr format="reference" name="textAppearanceSmallPopupMenu_ox"/>
+        <attr format="reference" name="dialogTheme_ox"/>
+        <attr format="dimension" name="dialogPreferredPadding_ox"/>
+        <attr format="reference" name="listDividerAlertDialog"/>
+        <attr format="reference" name="actionDropDownStyle_ox"/>
+        <attr format="dimension" name="dropdownListPreferredItemHeight_ox"/>
+        <attr format="reference" name="spinnerDropDownItemStyle_ox"/>
+        <attr format="reference" name="homeAsUpIndicator_ox"/>
+        <attr format="reference" name="actionButtonStyle_ox"/>
+        <attr format="reference" name="buttonBarStyle_ox"/>
+        <attr format="reference" name="buttonBarButtonStyle_ox"/>
+        <attr format="reference" name="selectableItemBackground_ox"/>
+        <attr format="reference" name="selectableItemBackgroundBorderless_ox"/>
+        <attr format="reference" name="borderlessButtonStyle_ox"/>
+        <attr format="reference" name="dividerVertical_ox"/>
+        <attr format="reference" name="dividerHorizontal_ox"/>
+        <attr format="reference" name="activityChooserViewStyle_ox"/>
+        <attr format="reference" name="toolbarStyle_ox"/>
+        <attr format="reference" name="toolbarNavigationButtonStyle_ox"/>
+        <attr format="reference" name="popupMenuStyle_ox"/>
+        <attr format="reference" name="popupWindowStyle_ox"/>
+        <attr format="reference|color" name="editTextColor_ox"/>
+        <attr format="reference" name="editTextBackground_ox"/>
+        <attr format="reference" name="imageButtonStyle_ox"/>
+        <attr format="reference" name="textAppearanceSearchResultTitle_ox"/>
+        <attr format="reference" name="textAppearanceSearchResultSubtitle_ox"/>
+        <attr format="reference|color" name="textColorSearchUrl_ox"/>
+        <attr format="reference" name="searchViewStyle_ox"/>
+        <attr format="dimension" name="listPreferredItemHeight_ox"/>
+        <attr format="dimension" name="listPreferredItemHeightSmall_ox"/>
+        <attr format="dimension" name="listPreferredItemHeightLarge_ox"/>
+        <attr format="dimension" name="listPreferredItemPaddingLeft_ox"/>
+        <attr format="dimension" name="listPreferredItemPaddingRight_ox"/>
+        <attr format="reference" name="dropDownListViewStyle_ox"/>
+        <attr format="reference" name="listPopupWindowStyle_ox"/>
+        <attr format="reference" name="textAppearanceListItem_ox"/>
+        <attr format="reference" name="textAppearanceListItemSmall_ox"/>
+        <attr format="reference" name="panelBackground_ox"/>
+        <attr format="dimension" name="panelMenuListWidth_ox"/>
+        <attr format="reference" name="panelMenuListTheme_ox"/>
+        <attr format="reference" name="listChoiceBackgroundIndicator_ox"/>
+        <attr format="color" name="colorPrimary_ox"/>
+        <attr format="color" name="colorPrimaryDark_ox"/>
+        <attr format="color" name="colorAccent_ox"/>
+        <attr format="color" name="colorControlNormal_ox"/>
+        <attr format="color" name="colorControlActivated_ox"/>
+        <attr format="color" name="colorControlHighlight_ox"/><attr format="color" name="colorButtonNormal_ox"/><attr format="color" name="colorSwitchThumbNormal_ox"/>
+        <attr format="reference" name="controlBackground_ox"/>
+        <attr format="reference" name="alertDialogStyle_ox"/>
+        <attr format="reference" name="alertDialogButtonGroupStyle_ox"/>
+        <attr format="boolean" name="alertDialogCenterButtons_ox"/>
+        <attr format="reference" name="alertDialogTheme_ox"/>
+        <attr format="reference|color" name="textColorAlertDialogListItem_ox"/>
+        <attr format="reference" name="buttonBarPositiveButtonStyle_ox"/>
+        <attr format="reference" name="buttonBarNegativeButtonStyle_ox"/>
+        <attr format="reference" name="buttonBarNeutralButtonStyle_ox"/>
+        <attr format="reference" name="autoCompleteTextViewStyle_ox"/>
+        <attr format="reference" name="buttonStyle_ox"/>
+        <attr format="reference" name="buttonStyleSmall_ox"/>
+        <attr format="reference" name="checkboxStyle_ox"/>
+        <attr format="reference" name="checkedTextViewStyle_ox"/>
+        <attr format="reference" name="editTextStyle_ox"/>
+        <attr format="reference" name="radioButtonStyle_ox"/>
+        <attr format="reference" name="ratingBarStyle_ox"/>
+        <attr format="reference" name="ratingBarStyleIndicator_ox"/>
+        <attr format="reference" name="ratingBarStyleSmall_ox"/>
+        <attr format="reference" name="seekBarStyle_ox"/>
+        <attr format="reference" name="spinnerStyle_ox"/>
+        <attr format="reference" name="switchStyle_ox"/>
+    </declare-styleable>
     <declare-styleable name="ButtonBarLayout"><attr format="boolean" name="allowStacking"/></declare-styleable>
     <declare-styleable name="CompoundButton"><attr name="android:button"/><attr format="color" name="buttonTint"/><attr name="buttonTintMode"><enum name="src_over" value="3"/><enum name="src_in" value="5"/><enum name="src_atop" value="9"/><enum name="multiply" value="14"/><enum name="screen" value="15"/></attr></declare-styleable>
     <declare-styleable name="DrawerArrowToggle"><attr format="color" name="color"/><attr format="boolean" name="spinBars"/><attr format="dimension" name="drawableSize"/><attr format="dimension" name="gapBetweenBars"/><attr format="dimension" name="arrowHeadLength"/><attr format="dimension" name="arrowShaftLength"/><attr format="dimension" name="barLength"/><attr format="dimension" name="thickness"/></declare-styleable>
@@ -433,8 +538,8 @@
     </style>
     <style name="Base.DialogWindowTitleBackground.AppCompat" parent="android:Widget">
         <item name="android:background">@null</item>
-        <item name="android:paddingLeft">?attr/dialogPreferredPadding</item>
-        <item name="android:paddingRight">?attr/dialogPreferredPadding</item>
+        <item name="android:paddingLeft">?attr/dialogPreferredPadding_ox</item>
+        <item name="android:paddingRight">?attr/dialogPreferredPadding_ox</item>
         <item name="android:paddingTop">@dimen/abc_dialog_padding_top_material</item>
     </style>
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance">
@@ -596,8 +701,8 @@
     </style>
     <style name="Base.Theme.AppCompat.Dialog" parent="Base.V7.Theme.AppCompat.Dialog"/>
     <style name="Base.Theme.AppCompat.Dialog.Alert">
-        <item name="windowMinWidthMajor">@dimen/abc_dialog_min_width_major</item>
-        <item name="windowMinWidthMinor">@dimen/abc_dialog_min_width_minor</item>
+        <item name="windowMinWidthMajor_ox">@dimen/abc_dialog_min_width_major</item>
+        <item name="windowMinWidthMinor_ox">@dimen/abc_dialog_min_width_minor</item>
     </style>
     <style name="Base.Theme.AppCompat.Dialog.FixedSize">
         <item name="windowFixedWidthMajor_ox">@dimen/abc_dialog_fixed_width_major</item>
@@ -606,8 +711,8 @@
         <item name="windowFixedHeightMinor_ox">@dimen/abc_dialog_fixed_height_minor</item>
     </style>
     <style name="Base.Theme.AppCompat.Dialog.MinWidth">
-        <item name="windowMinWidthMajor">@dimen/abc_dialog_min_width_major</item>
-        <item name="windowMinWidthMinor">@dimen/abc_dialog_min_width_minor</item>
+        <item name="windowMinWidthMajor_ox">@dimen/abc_dialog_min_width_major</item>
+        <item name="windowMinWidthMinor_ox">@dimen/abc_dialog_min_width_minor</item>
     </style>
     <style name="Base.Theme.AppCompat.DialogWhenLarge" parent="Theme.AppCompat"/>
     <style name="Base.Theme.AppCompat.Light" parent="Base.V7.Theme.AppCompat.Light">
@@ -625,8 +730,8 @@
     </style>
     <style name="Base.Theme.AppCompat.Light.Dialog" parent="Base.V7.Theme.AppCompat.Light.Dialog"/>
     <style name="Base.Theme.AppCompat.Light.Dialog.Alert">
-        <item name="windowMinWidthMajor">@dimen/abc_dialog_min_width_major</item>
-        <item name="windowMinWidthMinor">@dimen/abc_dialog_min_width_minor</item>
+        <item name="windowMinWidthMajor_ox">@dimen/abc_dialog_min_width_major</item>
+        <item name="windowMinWidthMinor_ox">@dimen/abc_dialog_min_width_minor</item>
     </style>
     <style name="Base.Theme.AppCompat.Light.Dialog.FixedSize">
         <item name="windowFixedWidthMajor_ox">@dimen/abc_dialog_fixed_width_major</item>
@@ -635,8 +740,8 @@
         <item name="windowFixedHeightMinor_ox">@dimen/abc_dialog_fixed_height_minor</item>
     </style>
     <style name="Base.Theme.AppCompat.Light.Dialog.MinWidth">
-        <item name="windowMinWidthMajor">@dimen/abc_dialog_min_width_major</item>
-        <item name="windowMinWidthMinor">@dimen/abc_dialog_min_width_minor</item>
+        <item name="windowMinWidthMajor_ox">@dimen/abc_dialog_min_width_major</item>
+        <item name="windowMinWidthMinor_ox">@dimen/abc_dialog_min_width_minor</item>
     </style>
     <style name="Base.Theme.AppCompat.Light.DialogWhenLarge" parent="Theme.AppCompat.Light"/>
     <style name="Base.ThemeOverlay.AppCompat" parent="Platform.ThemeOverlay.AppCompat"/>
@@ -702,7 +807,7 @@
         <item name="isLightTheme">true</item>
     </style>
     <style name="Base.V7.Theme.AppCompat" parent="Platform.AppCompat">
-        <item name="windowNoTitle">false</item>
+        <item name="windowNoTitle_ox">false</item>
         <item name="windowActionBar_ox">true</item>
         <item name="windowActionBarOverlay_ox">false</item>
         <item name="windowActionModeOverlay_ox">false</item>
@@ -713,7 +818,7 @@
 
         <item name="selectableItemBackground_ox">@drawable/abc_item_background_holo_dark_ox</item>
         <item name="selectableItemBackgroundBorderless_ox">?attr/selectableItemBackground_ox</item>
-        <item name="borderlessButtonStyle">@style/Widget.AppCompat.Button.Borderless</item>
+        <item name="borderlessButtonStyle_ox">@style/Widget.AppCompat.Button.Borderless</item>
         <item name="homeAsUpIndicator_ox">@drawable/abc_ic_ab_back_mtrl_am_alpha_ox</item>
 
 
@@ -796,10 +901,10 @@
         <item name="toolbarStyle_ox">@style/Widget.AppCompat.Toolbar</item>
         <item name="toolbarNavigationButtonStyle_ox">@style/Widget.AppCompat.Toolbar.Button.Navigation</item>
 
-        <item name="editTextStyle">@style/Widget.AppCompat.EditText</item>
+        <item name="editTextStyle_ox">@style/Widget.AppCompat.EditText</item>
         <item name="editTextBackground_ox">@drawable/abc_edit_text_material_ox</item>
         <item name="editTextColor_ox">?android:attr/textColorPrimary</item>
-        <item name="autoCompleteTextViewStyle">@style/Widget.AppCompat.AutoCompleteTextView</item>
+        <item name="autoCompleteTextViewStyle_ox">@style/Widget.AppCompat.AutoCompleteTextView</item>
 
         <!-- Color palette -->
         <item name="colorPrimaryDark_ox">@color/primary_dark_material_dark</item>
@@ -811,40 +916,40 @@
         <item name="colorControlHighlight_ox">@color/ripple_material_dark</item>
         <item name="colorButtonNormal_ox">@color/button_material_dark</item>
         <item name="colorSwitchThumbNormal_ox">@color/switch_thumb_material_dark_ox</item>
-        <item name="controlBackground">?attr/selectableItemBackgroundBorderless_ox</item>
+        <item name="controlBackground_ox">?attr/selectableItemBackgroundBorderless_ox</item>
 
         <item name="drawerArrowStyle">@style/Widget.AppCompat.DrawerArrowToggle</item>
 
-        <item name="checkboxStyle">@style/Widget.AppCompat.CompoundButton.CheckBox</item>
-        <item name="radioButtonStyle">@style/Widget.AppCompat.CompoundButton.RadioButton</item>
+        <item name="checkboxStyle_ox">@style/Widget.AppCompat.CompoundButton.CheckBox</item>
+        <item name="radioButtonStyle_ox">@style/Widget.AppCompat.CompoundButton.RadioButton</item>
         <item name="switchStyle_ox">@style/Widget.AppCompat.CompoundButton.Switch</item>
 
-        <item name="ratingBarStyle">@style/Widget.AppCompat.RatingBar</item>
-        <item name="ratingBarStyleIndicator">@style/Widget.AppCompat.RatingBar.Indicator</item>
-        <item name="ratingBarStyleSmall">@style/Widget.AppCompat.RatingBar.Small</item>
-        <item name="seekBarStyle">@style/Widget.AppCompat.SeekBar</item>
+        <item name="ratingBarStyle_ox">@style/Widget.AppCompat.RatingBar</item>
+        <item name="ratingBarStyleIndicator_ox">@style/Widget.AppCompat.RatingBar.Indicator</item>
+        <item name="ratingBarStyleSmall_ox">@style/Widget.AppCompat.RatingBar.Small</item>
+        <item name="seekBarStyle_ox">@style/Widget.AppCompat.SeekBar</item>
 
         <!-- Button styles -->
-        <item name="buttonStyle">@style/Widget.AppCompat.Button</item>
-        <item name="buttonStyleSmall">@style/Widget.AppCompat.Button.Small</item>
+        <item name="buttonStyle_ox">@style/Widget.AppCompat.Button</item>
+        <item name="buttonStyleSmall_ox">@style/Widget.AppCompat.Button.Small</item>
         <item name="android:textAppearanceButton">@style/TextAppearance.AppCompat.Widget.Button</item>
 
-        <item name="imageButtonStyle">@style/Widget.AppCompat.ImageButton</item>
+        <item name="imageButtonStyle_ox">@style/Widget.AppCompat.ImageButton</item>
 
         <item name="buttonBarStyle_ox">@style/Widget.AppCompat.ButtonBar</item>
         <item name="buttonBarButtonStyle_ox">@style/Widget.AppCompat.Button.ButtonBar.AlertDialog</item>
-        <item name="buttonBarPositiveButtonStyle">?attr/buttonBarButtonStyle_ox</item>
-        <item name="buttonBarNegativeButtonStyle">?attr/buttonBarButtonStyle_ox</item>
-        <item name="buttonBarNeutralButtonStyle">?attr/buttonBarButtonStyle_ox</item>
+        <item name="buttonBarPositiveButtonStyle_ox">?attr/buttonBarButtonStyle_ox</item>
+        <item name="buttonBarNegativeButtonStyle_ox">?attr/buttonBarButtonStyle_ox</item>
+        <item name="buttonBarNeutralButtonStyle_ox">?attr/buttonBarButtonStyle_ox</item>
 
         <!-- Dialog attributes -->
-        <item name="dialogTheme">@style/Theme.AppCompat.Dialog</item>
-        <item name="dialogPreferredPadding">@dimen/abc_dialog_padding_material</item>
+        <item name="dialogTheme_ox">@style/Theme.AppCompat.Dialog</item>
+        <item name="dialogPreferredPadding_ox">@dimen/abc_dialog_padding_material</item>
 
-        <item name="alertDialogTheme">@style/Theme.AppCompat.Dialog.Alert</item>
-        <item name="alertDialogStyle">@style/AlertDialog.AppCompat</item>
-        <item name="alertDialogCenterButtons">false</item>
-        <item name="textColorAlertDialogListItem">@color/abc_primary_text_material_dark_ox</item>
+        <item name="alertDialogTheme_ox">@style/Theme.AppCompat.Dialog.Alert</item>
+        <item name="alertDialogStyle_ox">@style/AlertDialog.AppCompat</item>
+        <item name="alertDialogCenterButtons_ox">false</item>
+        <item name="textColorAlertDialogListItem_ox">@color/abc_primary_text_material_dark_ox</item>
         <item name="listDividerAlertDialog">@null</item>
 
         <!-- Define these here; ContextThemeWrappers around themes that define them should
@@ -877,7 +982,7 @@
         <item name="android:listDivider">@null</item>
     </style>
     <style name="Base.V7.Theme.AppCompat.Light" parent="Platform.AppCompat.Light">
-        <item name="windowNoTitle">false</item>
+        <item name="windowNoTitle_ox">false</item>
         <item name="windowActionBar_ox">true</item>
         <item name="windowActionBarOverlay_ox">false</item>
         <item name="windowActionModeOverlay_ox">false</item>
@@ -888,7 +993,7 @@
 
         <item name="selectableItemBackground_ox">@drawable/abc_item_background_holo_light_ox</item>
         <item name="selectableItemBackgroundBorderless_ox">?attr/selectableItemBackground_ox</item>
-        <item name="borderlessButtonStyle">@style/Widget.AppCompat.Button.Borderless</item>
+        <item name="borderlessButtonStyle_ox">@style/Widget.AppCompat.Button.Borderless</item>
         <item name="homeAsUpIndicator_ox">@drawable/abc_ic_ab_back_mtrl_am_alpha_ox</item>
 
 
@@ -971,10 +1076,10 @@
         <item name="toolbarStyle_ox">@style/Widget.AppCompat.Toolbar</item>
         <item name="toolbarNavigationButtonStyle_ox">@style/Widget.AppCompat.Toolbar.Button.Navigation</item>
 
-        <item name="editTextStyle">@style/Widget.AppCompat.EditText</item>
+        <item name="editTextStyle_ox">@style/Widget.AppCompat.EditText</item>
         <item name="editTextBackground_ox">@drawable/abc_edit_text_material_ox</item>
         <item name="editTextColor_ox">?android:attr/textColorPrimary</item>
-        <item name="autoCompleteTextViewStyle">@style/Widget.AppCompat.AutoCompleteTextView</item>
+        <item name="autoCompleteTextViewStyle_ox">@style/Widget.AppCompat.AutoCompleteTextView</item>
 
         <!-- Color palette -->
         <item name="colorPrimaryDark_ox">@color/primary_dark_material_light</item>
@@ -986,40 +1091,40 @@
         <item name="colorControlHighlight_ox">@color/ripple_material_light</item>
         <item name="colorButtonNormal_ox">@color/button_material_light</item>
         <item name="colorSwitchThumbNormal_ox">@color/switch_thumb_material_light_ox</item>
-        <item name="controlBackground">?attr/selectableItemBackgroundBorderless_ox</item>
+        <item name="controlBackground_ox">?attr/selectableItemBackgroundBorderless_ox</item>
 
         <item name="drawerArrowStyle">@style/Widget.AppCompat.DrawerArrowToggle</item>
 
-        <item name="checkboxStyle">@style/Widget.AppCompat.CompoundButton.CheckBox</item>
-        <item name="radioButtonStyle">@style/Widget.AppCompat.CompoundButton.RadioButton</item>
+        <item name="checkboxStyle_ox">@style/Widget.AppCompat.CompoundButton.CheckBox</item>
+        <item name="radioButtonStyle_ox">@style/Widget.AppCompat.CompoundButton.RadioButton</item>
         <item name="switchStyle_ox">@style/Widget.AppCompat.CompoundButton.Switch</item>
 
-        <item name="ratingBarStyle">@style/Widget.AppCompat.RatingBar</item>
-        <item name="ratingBarStyleIndicator">@style/Widget.AppCompat.RatingBar.Indicator</item>
-        <item name="ratingBarStyleSmall">@style/Widget.AppCompat.RatingBar.Small</item>
-        <item name="seekBarStyle">@style/Widget.AppCompat.SeekBar</item>
+        <item name="ratingBarStyle_ox">@style/Widget.AppCompat.RatingBar</item>
+        <item name="ratingBarStyleIndicator_ox">@style/Widget.AppCompat.RatingBar.Indicator</item>
+        <item name="ratingBarStyleSmall_ox">@style/Widget.AppCompat.RatingBar.Small</item>
+        <item name="seekBarStyle_ox">@style/Widget.AppCompat.SeekBar</item>
 
         <!-- Button styles -->
-        <item name="buttonStyle">@style/Widget.AppCompat.Button</item>
-        <item name="buttonStyleSmall">@style/Widget.AppCompat.Button.Small</item>
+        <item name="buttonStyle_ox">@style/Widget.AppCompat.Button</item>
+        <item name="buttonStyleSmall_ox">@style/Widget.AppCompat.Button.Small</item>
         <item name="android:textAppearanceButton">@style/TextAppearance.AppCompat.Widget.Button</item>
 
-        <item name="imageButtonStyle">@style/Widget.AppCompat.ImageButton</item>
+        <item name="imageButtonStyle_ox">@style/Widget.AppCompat.ImageButton</item>
 
         <item name="buttonBarStyle_ox">@style/Widget.AppCompat.ButtonBar</item>
         <item name="buttonBarButtonStyle_ox">@style/Widget.AppCompat.Button.ButtonBar.AlertDialog</item>
-        <item name="buttonBarPositiveButtonStyle">?attr/buttonBarButtonStyle_ox</item>
-        <item name="buttonBarNegativeButtonStyle">?attr/buttonBarButtonStyle_ox</item>
-        <item name="buttonBarNeutralButtonStyle">?attr/buttonBarButtonStyle_ox</item>
+        <item name="buttonBarPositiveButtonStyle_ox">?attr/buttonBarButtonStyle_ox</item>
+        <item name="buttonBarNegativeButtonStyle_ox">?attr/buttonBarButtonStyle_ox</item>
+        <item name="buttonBarNeutralButtonStyle_ox">?attr/buttonBarButtonStyle_ox</item>
 
         <!-- Dialog attributes -->
-        <item name="dialogTheme">@style/Theme.AppCompat.Light.Dialog</item>
-        <item name="dialogPreferredPadding">@dimen/abc_dialog_padding_material</item>
+        <item name="dialogTheme_ox">@style/Theme.AppCompat.Light.Dialog</item>
+        <item name="dialogPreferredPadding_ox">@dimen/abc_dialog_padding_material</item>
 
-        <item name="alertDialogTheme">@style/Theme.AppCompat.Light.Dialog.Alert</item>
-        <item name="alertDialogStyle">@style/AlertDialog.AppCompat.Light</item>
-        <item name="alertDialogCenterButtons">false</item>
-        <item name="textColorAlertDialogListItem">@color/abc_primary_text_material_light_ox</item>
+        <item name="alertDialogTheme_ox">@style/Theme.AppCompat.Light.Dialog.Alert</item>
+        <item name="alertDialogStyle_ox">@style/AlertDialog.AppCompat.Light</item>
+        <item name="alertDialogCenterButtons_ox">false</item>
+        <item name="textColorAlertDialogListItem_ox">@color/abc_primary_text_material_light_ox</item>
         <item name="listDividerAlertDialog">@null</item>
 
         <!-- Define these here; ContextThemeWrappers around themes that define them should
@@ -1124,7 +1229,7 @@
         <item name="textAllCaps_ox">@bool/abc_config_actionMenuItemAllCaps</item>
     </style>
     <style name="Base.Widget.AppCompat.ActionButton.CloseMode">
-        <item name="android:background">?attr/controlBackground</item>
+        <item name="android:background">?attr/controlBackground_ox</item>
     </style>
     <style name="Base.Widget.AppCompat.ActionButton.Overflow" parent="RtlUnderlay.Widget.AppCompat.ActionButton.Overflow">
         <item name="android:src">@drawable/abc_ic_menu_moreoverflow_mtrl_alpha_ox</item>
@@ -1183,17 +1288,17 @@
     <style name="Base.Widget.AppCompat.ButtonBar.AlertDialog"/>
     <style name="Base.Widget.AppCompat.CompoundButton.CheckBox" parent="android:Widget.CompoundButton.CheckBox">
         <item name="android:button">?android:attr/listChoiceIndicatorMultiple</item>
-        <item name="android:background">?attr/controlBackground</item>
+        <item name="android:background">?attr/controlBackground_ox</item>
     </style>
     <style name="Base.Widget.AppCompat.CompoundButton.RadioButton" parent="android:Widget.CompoundButton.RadioButton">
         <item name="android:button">?android:attr/listChoiceIndicatorSingle</item>
-        <item name="android:background">?attr/controlBackground</item>
+        <item name="android:background">?attr/controlBackground_ox</item>
     </style>
     <style name="Base.Widget.AppCompat.CompoundButton.Switch" parent="android:Widget.CompoundButton">
         <item name="track">@drawable/abc_switch_track_mtrl_alpha_ox</item>
         <item name="android:thumb">@drawable/abc_switch_thumb_material_ox</item>
         <item name="switchTextAppearance">@style/TextAppearance.AppCompat.Widget.Switch</item>
-        <item name="android:background">?attr/controlBackground</item>
+        <item name="android:background">?attr/controlBackground_ox</item>
         <item name="showText">false</item>
         <item name="switchPadding">@dimen/abc_switch_padding</item>
         <item name="android:textOn">@string/abc_capital_on</item>
@@ -1357,13 +1462,11 @@
         <item name="android:paddingRight">@dimen/abc_action_bar_default_padding_end_material</item>
     </style>
     <style name="Base.Widget.AppCompat.Toolbar.Button.Navigation" parent="android:Widget">
-        <item name="android:background">?attr/controlBackground</item>
+        <item name="android:background">?attr/controlBackground_ox</item>
         <item name="android:minWidth">56dp</item>
         <item name="android:scaleType">center</item>
     </style>
     <style name="Platform.AppCompat" parent="android:Theme">
-        <item name="android:windowNoTitle">true</item>
-
         <!-- Window colors -->
         <item name="android:colorForeground">@color/foreground_material_dark</item>
         <item name="android:colorForegroundInverse">@color/foreground_material_light</item>
@@ -1400,7 +1503,6 @@
         <item name="android:listChoiceIndicatorMultiple">@drawable/abc_btn_check_material_ox</item>
     </style>
     <style name="Platform.AppCompat.Light" parent="android:Theme.Light">
-        <item name="android:windowNoTitle">true</item>
 
         <!-- Window colors -->
         <item name="android:colorForeground">@color/foreground_material_light</item>
@@ -1595,11 +1697,11 @@
     </style>
     <style name="Theme.AppCompat.Light.NoActionBar">
         <item name="windowActionBar_ox">false</item>
-        <item name="windowNoTitle">true</item>
+        <item name="windowNoTitle_ox">true</item>
     </style>
     <style name="Theme.AppCompat.NoActionBar">
         <item name="windowActionBar_ox">false</item>
-        <item name="windowNoTitle">true</item>
+        <item name="windowNoTitle_ox">true</item>
     </style>
     <style name="ThemeOverlay.AppCompat" parent="Base.ThemeOverlay.AppCompat"/>
     <style name="ThemeOverlay.AppCompat.ActionBar" parent="Base.ThemeOverlay.AppCompat.ActionBar"/>

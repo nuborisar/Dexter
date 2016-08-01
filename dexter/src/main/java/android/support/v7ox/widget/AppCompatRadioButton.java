@@ -52,7 +52,7 @@ public class AppCompatRadioButton extends RadioButton implements TintableCompoun
     }
 
     public AppCompatRadioButton(Context context, AttributeSet attrs) {
-        this(context, attrs, R.attr.radioButtonStyle);
+        this(context, attrs, R.attr.radioButtonStyle_ox);
     }
 
     public AppCompatRadioButton(Context context, AttributeSet attrs, int defStyleAttr) {

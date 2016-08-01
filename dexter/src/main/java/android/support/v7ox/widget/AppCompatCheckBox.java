@@ -52,7 +52,7 @@ public class AppCompatCheckBox extends CheckBox implements TintableCompoundButto
     }
 
     public AppCompatCheckBox(Context context, AttributeSet attrs) {
-        this(context, attrs, R.attr.checkboxStyle);
+        this(context, attrs, R.attr.checkboxStyle_ox);
     }
 
     public AppCompatCheckBox(Context context, AttributeSet attrs, int defStyleAttr) {

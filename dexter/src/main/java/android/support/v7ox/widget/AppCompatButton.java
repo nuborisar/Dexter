@@ -56,7 +56,7 @@ public class AppCompatButton extends Button implements TintableBackgroundView {
     }
 
     public AppCompatButton(Context context, AttributeSet attrs) {
-        this(context, attrs, R.attr.buttonStyle);
+        this(context, attrs, R.attr.buttonStyle_ox);
     }
 
     public AppCompatButton(Context context, AttributeSet attrs, int defStyleAttr) {

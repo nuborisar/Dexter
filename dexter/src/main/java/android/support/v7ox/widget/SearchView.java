@@ -1693,7 +1693,7 @@ public class SearchView extends LinearLayoutCompat implements CollapsibleActionV
         }
 
         public SearchAutoComplete(Context context, AttributeSet attrs) {
-            this(context, attrs, R.attr.autoCompleteTextViewStyle);
+            this(context, attrs, R.attr.autoCompleteTextViewStyle_ox);
         }
 
         public SearchAutoComplete(Context context, AttributeSet attrs, int defStyle) {

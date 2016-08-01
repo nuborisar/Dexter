@@ -55,7 +55,7 @@ public class AppCompatEditText extends EditText implements TintableBackgroundVie
     }
 
     public AppCompatEditText(Context context, AttributeSet attrs) {
-        this(context, attrs, R.attr.editTextStyle);
+        this(context, attrs, R.attr.editTextStyle_ox);
     }
 
     public AppCompatEditText(Context context, AttributeSet attrs, int defStyleAttr) {

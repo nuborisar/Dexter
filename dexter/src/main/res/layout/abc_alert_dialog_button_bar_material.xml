@@ -33,7 +33,7 @@
 
     <Button
         android:id="@android:id/button3"
-        style="?attr/buttonBarNeutralButtonStyle"
+        style="?attr/buttonBarNeutralButtonStyle_ox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
@@ -46,13 +46,13 @@
 
     <Button
         android:id="@android:id/button2"
-        style="?attr/buttonBarNegativeButtonStyle"
+        style="?attr/buttonBarNegativeButtonStyle_ox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <Button
         android:id="@android:id/button1"
-        style="?attr/buttonBarPositiveButtonStyle"
+        style="?attr/buttonBarPositiveButtonStyle_ox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

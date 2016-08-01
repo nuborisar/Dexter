@@ -26,7 +26,7 @@
     android:layout_height="wrap_content"
     android:minHeight="?attr/listPreferredItemHeightSmall_ox"
     android:textAppearance="?attr/textAppearanceListItemSmall_ox"
-    android:textColor="?attr/textColorAlertDialogListItem"
+    android:textColor="?attr/textColorAlertDialogListItem_ox"
     android:gravity="center_vertical"
     android:paddingLeft="?attr/listPreferredItemPaddingLeft_ox"
     android:paddingRight="?attr/listPreferredItemPaddingRight_ox"

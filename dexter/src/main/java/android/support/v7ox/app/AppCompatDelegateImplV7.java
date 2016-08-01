@@ -342,7 +342,7 @@ class AppCompatDelegateImplV7 extends AppCompatDelegateImplBase
                     "You need to use a Theme.AppCompat theme (or descendant) with this activity.");
         }
 
-        if (a.getBoolean(R.styleable.AppCompatTheme_windowNoTitle, false)) {
+        if (a.getBoolean(R.styleable.AppCompatTheme_windowNoTitle_ox, false)) {
             requestWindowFeature(Window.FEATURE_NO_TITLE);
         } else if (a.getBoolean(R.styleable.AppCompatTheme_windowActionBar_ox, false)) {
             // Don't allow an action bar if there is no title.
@@ -521,8 +521,8 @@ class AppCompatDelegateImplV7 extends AppCompatDelegateImplBase
                 windowDecor.getPaddingBottom());
 
         TypedArray a = mContext.obtainStyledAttributes(R.styleable.AppCompatTheme);
-        a.getValue(R.styleable.AppCompatTheme_windowMinWidthMajor, cfl.getMinWidthMajor());
-        a.getValue(R.styleable.AppCompatTheme_windowMinWidthMinor, cfl.getMinWidthMinor());
+        a.getValue(R.styleable.AppCompatTheme_windowMinWidthMajor_ox, cfl.getMinWidthMajor());
+        a.getValue(R.styleable.AppCompatTheme_windowMinWidthMinor_ox, cfl.getMinWidthMinor());
 
         if (a.hasValue(R.styleable.AppCompatTheme_windowFixedWidthMajor_ox)) {
             a.getValue(R.styleable.AppCompatTheme_windowFixedWidthMajor_ox,

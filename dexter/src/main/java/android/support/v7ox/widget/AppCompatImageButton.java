@@ -51,7 +51,7 @@ public class AppCompatImageButton extends ImageButton implements TintableBackgro
     }
 
     public AppCompatImageButton(Context context, AttributeSet attrs) {
-        this(context, attrs, R.attr.imageButtonStyle);
+        this(context, attrs, R.attr.imageButtonStyle_ox);
     }
 
     public AppCompatImageButton(Context context, AttributeSet attrs, int defStyleAttr) {

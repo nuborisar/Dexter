@@ -160,7 +160,7 @@ public class AppCompatDialog extends Dialog implements AppCompatCallback {
         if (themeId == 0) {
             // If the provided theme is 0, then retrieve the dialogTheme from our theme
             TypedValue outValue = new TypedValue();
-            context.getTheme().resolveAttribute(R.attr.dialogTheme, outValue, true);
+            context.getTheme().resolveAttribute(R.attr.dialogTheme_ox, outValue, true);
             themeId = outValue.resourceId;
         }
         return themeId;

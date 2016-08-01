@@ -28,6 +28,6 @@
             android:paddingRight="@dimen/design_snackbar_padding_horizontal"
             android:visibility="gone"
             android:textColor="?attr/colorAccent_ox"
-            style="?attr/borderlessButtonStyle"/>
+            style="?attr/borderlessButtonStyle_ox"/>
 
 </merge>

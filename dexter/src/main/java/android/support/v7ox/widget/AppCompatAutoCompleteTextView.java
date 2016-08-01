@@ -59,7 +59,7 @@ public class AppCompatAutoCompleteTextView extends AutoCompleteTextView implemen
     }
 
     public AppCompatAutoCompleteTextView(Context context, AttributeSet attrs) {
-        this(context, attrs, R.attr.autoCompleteTextViewStyle);
+        this(context, attrs, R.attr.autoCompleteTextViewStyle_ox);
     }
 
     public AppCompatAutoCompleteTextView(Context context, AttributeSet attrs, int defStyleAttr) {

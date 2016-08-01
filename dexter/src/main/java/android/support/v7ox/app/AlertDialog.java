@@ -106,7 +106,7 @@ public class AlertDialog extends AppCompatDialog implements DialogInterface {
             return resid;
         } else {
             TypedValue outValue = new TypedValue();
-            context.getTheme().resolveAttribute(R.attr.alertDialogTheme, outValue, true);
+            context.getTheme().resolveAttribute(R.attr.alertDialogTheme_ox, outValue, true);
             return outValue.resourceId;
         }
     }

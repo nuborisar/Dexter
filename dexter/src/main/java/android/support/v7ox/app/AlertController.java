@@ -171,7 +171,7 @@ class AlertController {
         mHandler = new ButtonHandler(di);
 
         final TypedArray a = context.obtainStyledAttributes(null, R.styleable.AlertDialog,
-                R.attr.alertDialogStyle, 0);
+                R.attr.alertDialogStyle_ox, 0);
 
         mAlertDialogLayout = a.getResourceId(R.styleable.AlertDialog_android_layout, 0);
         mButtonPanelSideLayout = a.getResourceId(R.styleable.AlertDialog_buttonPanelSideLayout, 0);

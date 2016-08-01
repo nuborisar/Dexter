@@ -40,7 +40,7 @@ public class AppCompatRatingBar extends RatingBar {
     }
 
     public AppCompatRatingBar(Context context, AttributeSet attrs) {
-        this(context, attrs, R.attr.ratingBarStyle);
+        this(context, attrs, R.attr.ratingBarStyle_ox);
     }
 
     public AppCompatRatingBar(Context context, AttributeSet attrs, int defStyleAttr) {

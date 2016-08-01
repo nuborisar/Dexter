@@ -38,7 +38,7 @@ public class AppCompatSeekBar extends SeekBar {
     }
 
     public AppCompatSeekBar(Context context, AttributeSet attrs) {
-        this(context, attrs, R.attr.seekBarStyle);
+        this(context, attrs, R.attr.seekBarStyle_ox);
     }
 
     public AppCompatSeekBar(Context context, AttributeSet attrs, int defStyleAttr) {
