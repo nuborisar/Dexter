@@ -119,9 +119,9 @@ public class FloatingActionButton extends VisibilityAwareImageButton {
         TypedArray a = context.obtainStyledAttributes(attrs,
                 R.styleable.FloatingActionButton, defStyleAttr,
                 R.style.Widget_Design_FloatingActionButton);
-        mBackgroundTint = a.getColorStateList(R.styleable.FloatingActionButton_backgroundTint);
+        mBackgroundTint = a.getColorStateList(R.styleable.FloatingActionButton_backgroundTint_ox);
         mBackgroundTintMode = parseTintMode(a.getInt(
-                R.styleable.FloatingActionButton_backgroundTintMode, -1), null);
+                R.styleable.FloatingActionButton_backgroundTintMode_ox, -1), null);
         mRippleColor = a.getColor(R.styleable.FloatingActionButton_rippleColor, 0);
         mSize = a.getInt(R.styleable.FloatingActionButton_fabSize, SIZE_NORMAL);
         mBorderWidth = a.getDimensionPixelSize(R.styleable.FloatingActionButton_borderWidth, 0);

@@ -28,7 +28,17 @@
     <declare-styleable name="CoordinatorLayout"><attr format="reference" name="keylines"/><attr format="reference" name="statusBarBackground"/></declare-styleable>
     <declare-styleable name="CoordinatorLayout_LayoutParams"><attr name="android:layout_gravity"/><attr format="string" name="layout_behavior"/><attr format="reference" name="layout_anchor"/><attr format="integer" name="layout_keyline"/><attr name="layout_anchorGravity"><flag name="top" value="0x30"/><flag name="bottom" value="0x50"/><flag name="left" value="0x03"/><flag name="right" value="0x05"/><flag name="center_vertical" value="0x10"/><flag name="fill_vertical" value="0x70"/><flag name="center_horizontal" value="0x01"/><flag name="fill_horizontal" value="0x07"/><flag name="center" value="0x11"/><flag name="fill" value="0x77"/><flag name="clip_vertical" value="0x80"/><flag name="clip_horizontal" value="0x08"/><flag name="start" value="0x00800003"/><flag name="end" value="0x00800005"/></attr></declare-styleable>
     <declare-styleable name="DesignTheme"><attr format="reference" name="bottomSheetDialogTheme"/><attr format="reference" name="bottomSheetStyle"/><attr format="color" name="textColorError"/></declare-styleable>
-    <declare-styleable name="FloatingActionButton"><attr name="backgroundTint"/><attr name="backgroundTintMode"/><attr format="color" name="rippleColor"/><attr name="fabSize"><enum name="normal" value="0"/><enum name="mini" value="1"/></attr><attr name="elevation"/><attr format="dimension" name="pressedTranslationZ"/><attr format="dimension" name="borderWidth"/><attr format="boolean" name="useCompatPadding"/></declare-styleable>
+    <declare-styleable name="FloatingActionButton">
+        <attr name="backgroundTint_ox"/>
+        <attr name="backgroundTintMode_ox"/>
+        <attr format="color" name="rippleColor"/>
+        <attr name="fabSize"><enum name="normal" value="0"/>
+            <enum name="mini" value="1"/>
+        </attr><attr name="elevation"/>
+        <attr format="dimension" name="pressedTranslationZ"/>
+        <attr format="dimension" name="borderWidth"/>
+        <attr format="boolean" name="useCompatPadding"/>
+    </declare-styleable>
     <declare-styleable name="ForegroundLinearLayout"><attr name="android:foreground"/><attr name="android:foregroundGravity"/><attr format="boolean" name="foregroundInsidePadding"/></declare-styleable>
     <declare-styleable name="NavigationView"><attr name="android:background"/><attr name="android:fitsSystemWindows"/><attr name="android:maxWidth"/><attr name="elevation"/><attr format="reference" name="menu"/><attr format="color" name="itemIconTint"/><attr format="color" name="itemTextColor"/><attr format="reference" name="itemBackground"/><attr format="reference" name="itemTextAppearance"/><attr format="reference" name="headerLayout"/></declare-styleable>
     <declare-styleable name="ScrimInsetsFrameLayout"><attr format="color|reference" name="insetForeground"/></declare-styleable>
@@ -151,7 +161,7 @@
     </style>
     <style name="Widget.Design.FloatingActionButton" parent="android:Widget">
         <item name="android:background">@drawable/design_fab_background_ox</item>
-        <item name="backgroundTint">?attr/colorAccent_ox</item>
+        <item name="backgroundTint_ox">?attr/colorAccent_ox</item>
         <item name="fabSize">normal</item>
         <item name="elevation">@dimen/design_fab_elevation</item>
         <item name="pressedTranslationZ">@dimen/design_fab_translation_z_pressed</item>
@@ -315,7 +325,7 @@
         <attr format="reference" name="textAppearanceSmallPopupMenu_ox"/>
         <attr format="reference" name="dialogTheme_ox"/>
         <attr format="dimension" name="dialogPreferredPadding_ox"/>
-        <attr format="reference" name="listDividerAlertDialog"/>
+        <attr format="reference" name="listDividerAlertDialog_ox"/>
         <attr format="reference" name="actionDropDownStyle_ox"/>
         <attr format="dimension" name="dropdownListPreferredItemHeight_ox"/>
         <attr format="reference" name="spinnerDropDownItemStyle_ox"/>
@@ -399,7 +409,9 @@
     <declare-styleable name="TextAppearance"><attr name="android:textSize"/><attr name="android:textColor"/><attr name="android:textStyle"/><attr name="android:typeface"/><attr name="textAllCaps_ox"/><attr name="android:shadowColor"/><attr name="android:shadowDy"/><attr name="android:shadowDx"/><attr name="android:shadowRadius"/></declare-styleable>
     <declare-styleable name="Toolbar"><attr format="reference" name="titleTextAppearance"/><attr format="reference" name="subtitleTextAppearance"/><attr name="title"/><attr name="subtitle"/><attr name="android:gravity"/><attr format="dimension" name="titleMargins"/><attr format="dimension" name="titleMarginStart"/><attr format="dimension" name="titleMarginEnd"/><attr format="dimension" name="titleMarginTop"/><attr format="dimension" name="titleMarginBottom"/><attr name="contentInsetStart"/><attr name="contentInsetEnd"/><attr name="contentInsetLeft"/><attr name="contentInsetRight"/><attr format="dimension" name="maxButtonHeight"/><attr format="reference" name="collapseIcon"/><attr format="string" name="collapseContentDescription"/><attr name="popupTheme"/><attr format="reference" name="navigationIcon"/><attr format="string" name="navigationContentDescription"/><attr name="android:minHeight"/><attr name="logo"/><attr format="string" name="logoDescription"/><attr format="color" name="titleTextColor"/><attr format="color" name="subtitleTextColor"/></declare-styleable>
     <declare-styleable name="View"><attr format="dimension" name="paddingStart"/><attr format="dimension" name="paddingEnd"/><attr name="android:focusable"/><attr format="reference" name="theme_ox"/><attr name="android:theme"/></declare-styleable>
-    <declare-styleable name="ViewBackgroundHelper"><attr name="android:background"/><attr format="color" name="backgroundTint"/><attr name="backgroundTintMode"><enum name="src_over" value="3"/><enum name="src_in" value="5"/><enum name="src_atop" value="9"/><enum name="multiply" value="14"/><enum name="screen" value="15"/></attr></declare-styleable>
+    <declare-styleable name="ViewBackgroundHelper"><attr name="android:background"/>
+        <attr format="color" name="backgroundTint_ox"/>
+        <attr name="backgroundTintMode_ox"><enum name="src_over" value="3"/><enum name="src_in" value="5"/><enum name="src_atop" value="9"/><enum name="multiply" value="14"/><enum name="screen" value="15"/></attr></declare-styleable>
     <declare-styleable name="ViewStubCompat"><attr name="android:layout"/><attr name="android:inflatedId"/><attr name="android:id"/></declare-styleable>
     <dimen name="abc_action_bar_content_inset_material">16dp</dimen>
     <dimen name="abc_action_bar_default_height_material">56dp</dimen>
@@ -950,7 +962,7 @@
         <item name="alertDialogStyle_ox">@style/AlertDialog.AppCompat</item>
         <item name="alertDialogCenterButtons_ox">false</item>
         <item name="textColorAlertDialogListItem_ox">@color/abc_primary_text_material_dark_ox</item>
-        <item name="listDividerAlertDialog">@null</item>
+        <item name="listDividerAlertDialog_ox">@null</item>
 
         <!-- Define these here; ContextThemeWrappers around themes that define them should
              always clear these values. -->
@@ -1125,7 +1137,7 @@
         <item name="alertDialogStyle_ox">@style/AlertDialog.AppCompat.Light</item>
         <item name="alertDialogCenterButtons_ox">false</item>
         <item name="textColorAlertDialogListItem_ox">@color/abc_primary_text_material_light_ox</item>
-        <item name="listDividerAlertDialog">@null</item>
+        <item name="listDividerAlertDialog_ox">@null</item>
 
         <!-- Define these here; ContextThemeWrappers around themes that define them should
              always clear these values. -->

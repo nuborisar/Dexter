@@ -55,14 +55,14 @@ class AppCompatBackgroundHelper {
                     setInternalBackgroundTint(tint);
                 }
             }
-            if (a.hasValue(R.styleable.ViewBackgroundHelper_backgroundTint)) {
+            if (a.hasValue(R.styleable.ViewBackgroundHelper_backgroundTint_ox)) {
                 ViewCompat.setBackgroundTintList(mView,
-                        a.getColorStateList(R.styleable.ViewBackgroundHelper_backgroundTint));
+                        a.getColorStateList(R.styleable.ViewBackgroundHelper_backgroundTint_ox));
             }
-            if (a.hasValue(R.styleable.ViewBackgroundHelper_backgroundTintMode)) {
+            if (a.hasValue(R.styleable.ViewBackgroundHelper_backgroundTintMode_ox)) {
                 ViewCompat.setBackgroundTintMode(mView,
                         DrawableUtils.parseTintMode(
-                                a.getInt(R.styleable.ViewBackgroundHelper_backgroundTintMode, -1),
+                                a.getInt(R.styleable.ViewBackgroundHelper_backgroundTintMode_ox, -1),
                                 null));
             }
         } finally {
