@@ -28,7 +28,7 @@ import android.support.annotationox.IntDef;
 import android.support.annotationox.NonNull;
 import android.support.annotationox.StringRes;
 //import android.support.designox.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 
 import android.support.v4ox.view.ViewCompat;
 import android.support.v4ox.view.ViewPropertyAnimatorListenerAdapter;

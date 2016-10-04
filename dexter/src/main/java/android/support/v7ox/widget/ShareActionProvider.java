@@ -24,7 +24,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.support.v4ox.view.ActionProvider;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 import android.support.v7ox.widget.ActivityChooserModel.OnChooseActivityListener;
 import android.util.TypedValue;
 import android.view.Menu;

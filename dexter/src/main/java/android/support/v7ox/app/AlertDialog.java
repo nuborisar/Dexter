@@ -24,7 +24,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Message;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 import android.util.TypedValue;
 import android.view.ContextThemeWrapper;
 import android.view.KeyEvent;

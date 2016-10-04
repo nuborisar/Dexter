@@ -20,7 +20,7 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.Log;
 //import android.support.designox.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 
 
 class ThemeUtils {

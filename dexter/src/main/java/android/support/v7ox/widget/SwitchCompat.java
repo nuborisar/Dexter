@@ -32,7 +32,7 @@ import android.support.v4ox.graphics.drawable.DrawableCompat;
 import android.support.v4ox.view.MotionEventCompat;
 import android.support.v4ox.view.ViewCompat;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 import android.support.v7ox.text.AllCapsTransformationMethod;
 import android.text.Layout;
 import android.text.StaticLayout;

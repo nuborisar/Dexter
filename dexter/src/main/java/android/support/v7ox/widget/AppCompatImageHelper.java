@@ -19,7 +19,7 @@ package android.support.v7ox.widget;
 import android.graphics.drawable.Drawable;
 import android.support.v4ox.content.ContextCompat;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 
 import android.util.AttributeSet;
 import android.widget.ImageView;

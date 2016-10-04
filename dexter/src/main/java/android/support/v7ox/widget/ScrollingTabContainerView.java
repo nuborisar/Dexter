@@ -25,7 +25,7 @@ import android.support.v4ox.view.ViewPropertyAnimatorCompat;
 import android.support.v4ox.view.ViewPropertyAnimatorListener;
 import android.support.v7ox.app.ActionBar;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 
 import android.support.v7ox.view.ActionBarPolicy;
 import android.text.TextUtils;

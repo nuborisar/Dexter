@@ -25,7 +25,7 @@ import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.LayerDrawable;
 import android.support.annotationox.Nullable;
 //import android.support.designox.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 
 import android.support.v4ox.graphics.drawable.DrawableCompat;
 import android.view.View;

@@ -28,7 +28,7 @@ import android.graphics.RectF;
 import android.graphics.Shader;
 import android.graphics.drawable.Drawable;
 //import android.support.designox.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 
 import android.support.v7ox.graphics.drawable.DrawableWrapper;
 

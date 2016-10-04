@@ -23,7 +23,7 @@ import android.support.annotationox.LayoutRes;
 import android.support.annotationox.NonNull;
 import android.support.annotationox.StyleRes;
 //import android.support.designox.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 
 import android.support.v7ox.app.AppCompatDialog;
 import android.util.TypedValue;

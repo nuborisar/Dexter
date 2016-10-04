@@ -32,7 +32,7 @@ import android.support.v4ox.internal.view.SupportMenuItem;
 import android.support.v4ox.view.ActionProvider;
 import android.support.v4ox.view.MenuItemCompat;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 import android.util.SparseArray;
 import android.view.ContextMenu;
 import android.view.KeyCharacterMap;

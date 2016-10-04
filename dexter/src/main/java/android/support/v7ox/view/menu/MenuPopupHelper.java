@@ -20,7 +20,7 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.os.Parcelable;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 
 import android.support.v7ox.widget.ListPopupWindow;
 import android.view.Gravity;

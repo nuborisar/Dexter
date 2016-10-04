@@ -31,7 +31,7 @@ import android.support.annotationox.IntDef;
 import android.support.v4ox.graphics.drawable.DrawableCompat;
 import android.support.v4ox.view.ViewCompat;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

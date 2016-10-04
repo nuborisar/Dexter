@@ -30,7 +30,7 @@ import android.support.annotationox.Nullable;
 import android.support.v4ox.app.FragmentActivity;
 import android.support.v4ox.view.WindowCompat;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 
 import android.support.v7ox.view.ActionMode;
 import android.support.v7ox.widget.Toolbar;

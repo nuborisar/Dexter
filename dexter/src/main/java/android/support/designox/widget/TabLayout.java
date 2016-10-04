@@ -34,7 +34,7 @@ import android.support.annotationox.NonNull;
 import android.support.annotationox.Nullable;
 import android.support.annotationox.StringRes;
 //import android.support.designox.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 
 import android.support.v4ox.util.Pools;
 import android.support.v4ox.view.GravityCompat;

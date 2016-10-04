@@ -19,7 +19,7 @@ package android.support.designox.widget;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 //import android.support.designox.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 
 import android.support.v7ox.widget.TintTypedArray;
 import android.util.AttributeSet;

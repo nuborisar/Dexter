@@ -23,7 +23,7 @@ import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.support.annotationox.NonNull;
 //import android.support.designox.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 import android.support.v4ox.view.ViewCompat;
 import android.support.v4ox.view.WindowInsetsCompat;
 import android.util.AttributeSet;

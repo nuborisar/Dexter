@@ -31,7 +31,7 @@ import android.support.v4ox.content.ContextCompat;
 import android.support.v4ox.view.TintableBackgroundView;
 import android.support.v4ox.view.ViewCompat;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 import android.support.v7ox.view.ContextThemeWrapper;
 import android.util.AttributeSet;
 import android.util.Log;

@@ -41,7 +41,7 @@ import android.speech.RecognizerIntent;
 import android.support.v4ox.view.KeyEventCompat;
 import android.support.v4ox.widget.CursorAdapter;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 import android.support.v7ox.view.CollapsibleActionView;
 import android.text.Editable;
 import android.text.InputType;

@@ -26,11 +26,10 @@ import android.support.annotationox.NonNull;
 import android.support.annotationox.Nullable;
 import android.support.annotationox.StringRes;
 import android.support.v4ox.app.Fragment;
-import android.support.v4ox.app.FragmentManager;
 import android.support.v4ox.app.FragmentTransaction;
 import android.support.v4ox.view.GravityCompat;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 
 import android.support.v7ox.view.ActionMode;
 import android.util.AttributeSet;

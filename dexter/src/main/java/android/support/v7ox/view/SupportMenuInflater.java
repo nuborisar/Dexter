@@ -28,7 +28,7 @@ import android.support.v4ox.internal.view.SupportMenu;
 import android.support.v4ox.view.ActionProvider;
 import android.support.v4ox.view.MenuItemCompat;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 import android.support.v7ox.view.menu.MenuItemImpl;
 import android.support.v7ox.view.menu.MenuItemWrapperICS;
 import android.util.AttributeSet;

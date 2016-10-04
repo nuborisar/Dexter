@@ -21,7 +21,7 @@ import android.content.DialogInterface;
 import android.os.IBinder;
 import android.support.v7ox.app.AlertDialog;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.Window;

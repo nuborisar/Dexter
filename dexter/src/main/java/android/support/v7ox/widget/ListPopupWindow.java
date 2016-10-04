@@ -31,7 +31,7 @@ import android.support.v4ox.view.ViewPropertyAnimatorCompat;
 import android.support.v4ox.widget.ListViewAutoScrollHelper;
 import android.support.v4ox.widget.PopupWindowCompat;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 
 import android.util.AttributeSet;
 import android.util.Log;

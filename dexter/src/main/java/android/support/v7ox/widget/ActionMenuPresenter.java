@@ -26,7 +26,7 @@ import android.support.v4ox.graphics.drawable.DrawableCompat;
 import android.support.v4ox.view.ActionProvider;
 import android.support.v4ox.view.GravityCompat;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 
 import android.support.v7ox.transition.ActionBarTransition;
 import android.support.v7ox.view.ActionBarPolicy;

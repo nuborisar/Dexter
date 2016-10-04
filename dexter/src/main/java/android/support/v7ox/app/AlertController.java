@@ -28,7 +28,7 @@ import android.support.annotationox.Nullable;
 import android.support.v4ox.view.ViewCompat;
 import android.support.v4ox.widget.NestedScrollView;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 import android.text.TextUtils;
 import android.util.TypedValue;
 import android.view.KeyEvent;

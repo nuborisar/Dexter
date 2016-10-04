@@ -26,7 +26,7 @@ import android.support.v4ox.view.ViewPropertyAnimatorCompat;
 import android.support.v4ox.view.ViewPropertyAnimatorListenerAdapter;
 import android.support.v7ox.app.WindowDecorActionBar;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 
 import android.support.v7ox.view.menu.ActionMenuItem;
 import android.support.v7ox.view.menu.MenuBuilder;

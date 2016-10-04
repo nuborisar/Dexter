@@ -23,7 +23,7 @@ import android.support.annotationox.IdRes;
 import android.support.annotationox.LayoutRes;
 import android.support.annotationox.Nullable;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 
 import android.support.v7ox.view.ActionMode;
 import android.util.TypedValue;

@@ -32,7 +32,7 @@ import android.support.v4ox.view.ViewPropertyAnimatorListener;
 import android.support.v4ox.view.ViewPropertyAnimatorListenerAdapter;
 import android.support.v4ox.view.ViewPropertyAnimatorUpdateListener;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 import android.support.v7ox.view.ActionBarPolicy;
 import android.support.v7ox.view.ActionMode;
 import android.support.v7ox.view.SupportMenuInflater;

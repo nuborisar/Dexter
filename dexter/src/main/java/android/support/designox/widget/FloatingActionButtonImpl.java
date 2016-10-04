@@ -26,7 +26,7 @@ import android.graphics.drawable.GradientDrawable;
 import android.support.annotationox.Nullable;
 //import android.support.designox.R;
 import android.view.ViewTreeObserver;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 
 abstract class FloatingActionButtonImpl {
 

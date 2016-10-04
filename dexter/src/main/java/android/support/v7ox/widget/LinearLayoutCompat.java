@@ -32,7 +32,7 @@ import android.view.ViewGroup;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
 
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

@@ -25,7 +25,7 @@ import android.support.annotationox.Nullable;
 import android.support.v4ox.content.ContextCompat;
 import android.support.v4ox.widget.TintableCompoundButton;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 import android.util.AttributeSet;
 import android.widget.RadioButton;
 

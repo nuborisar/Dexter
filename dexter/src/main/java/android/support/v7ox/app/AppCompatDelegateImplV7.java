@@ -46,7 +46,7 @@ import android.support.v4ox.view.WindowCompat;
 import android.support.v4ox.view.WindowInsetsCompat;
 import android.support.v4ox.widget.PopupWindowCompat;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 import android.support.v7ox.view.ActionMode;
 import android.support.v7ox.view.ContextThemeWrapper;
 import android.support.v7ox.view.StandaloneActionMode;

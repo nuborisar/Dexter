@@ -20,7 +20,7 @@ package android.support.v7ox.widget;
 import android.content.Context;
 import android.support.annotationox.MenuRes;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 import android.support.v7ox.view.SupportMenuInflater;
 import android.support.v7ox.view.menu.MenuBuilder;
 import android.support.v7ox.view.menu.MenuPopupHelper;

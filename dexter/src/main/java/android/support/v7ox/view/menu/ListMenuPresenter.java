@@ -20,7 +20,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.os.Parcelable;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 import android.util.SparseArray;
 import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;

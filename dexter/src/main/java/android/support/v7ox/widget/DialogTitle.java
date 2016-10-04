@@ -19,7 +19,7 @@ package android.support.v7ox.widget;
 import android.content.Context;
 import android.content.res.TypedArray;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 import android.text.Layout;
 import android.util.AttributeSet;
 import android.util.TypedValue;

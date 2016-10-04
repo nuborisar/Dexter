@@ -26,7 +26,7 @@ import android.graphics.RectF;
 import android.graphics.Typeface;
 import android.os.Build;
 //import android.support.designox.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 
 import android.support.v4ox.text.TextDirectionHeuristicsCompat;
 import android.support.v4ox.view.GravityCompat;

@@ -29,7 +29,7 @@ import android.support.annotationox.DrawableRes;
 import android.support.annotationox.NonNull;
 import android.support.annotationox.Nullable;
 //import android.support.designox.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 
 import android.support.v4ox.view.ViewCompat;
 import android.support.v7ox.widget.AppCompatDrawableManager;

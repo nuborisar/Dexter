@@ -21,7 +21,7 @@ import android.content.Context;
 import android.os.Build;
 import android.support.v4ox.widget.PopupWindowCompat;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;

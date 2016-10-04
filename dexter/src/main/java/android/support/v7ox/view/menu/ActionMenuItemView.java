@@ -26,7 +26,7 @@ import android.os.Build;
 import android.support.v4ox.view.GravityCompat;
 import android.support.v4ox.view.ViewCompat;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 
 import android.support.v7ox.widget.ActionMenuView;
 import android.support.v7ox.widget.AppCompatTextView;

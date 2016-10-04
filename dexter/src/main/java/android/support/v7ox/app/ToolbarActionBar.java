@@ -23,7 +23,7 @@ import android.graphics.drawable.Drawable;
 import android.support.annotationox.Nullable;
 import android.support.v4ox.view.ViewCompat;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 import android.support.v7ox.view.WindowCallbackWrapper;
 import android.support.v7ox.view.menu.ListMenuPresenter;
 import android.support.v7ox.view.menu.MenuBuilder;

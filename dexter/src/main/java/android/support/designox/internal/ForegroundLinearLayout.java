@@ -28,7 +28,7 @@ import android.support.v7ox.widget.LinearLayoutCompat;
 import android.util.AttributeSet;
 import android.view.Gravity;
 
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 
 /**
  * @hide

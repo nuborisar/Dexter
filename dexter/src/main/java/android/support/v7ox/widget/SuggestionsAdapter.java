@@ -33,7 +33,7 @@ import android.os.Bundle;
 import android.support.v4ox.content.ContextCompat;
 import android.support.v4ox.widget.ResourceCursorAdapter;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.TextUtils;

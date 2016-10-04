@@ -21,7 +21,7 @@ import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 import android.support.v7ox.view.ActionMode;
 import android.support.v7ox.view.SupportMenuInflater;
 import android.support.v7ox.view.WindowCallbackWrapper;

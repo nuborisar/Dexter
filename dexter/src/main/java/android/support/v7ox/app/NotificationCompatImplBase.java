@@ -26,7 +26,7 @@ import android.os.SystemClock;
 import android.support.v4ox.app.NotificationBuilderWithBuilderAccessor;
 import android.support.v4ox.app.NotificationCompatBase;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.RemoteViews;

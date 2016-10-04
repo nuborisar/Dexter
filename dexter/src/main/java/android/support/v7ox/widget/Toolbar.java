@@ -35,7 +35,7 @@ import android.support.v4ox.view.MotionEventCompat;
 import android.support.v4ox.view.ViewCompat;
 import android.support.v7ox.app.ActionBar;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 
 import android.support.v7ox.view.CollapsibleActionView;
 import android.support.v7ox.view.SupportMenuInflater;

@@ -21,7 +21,7 @@ import android.content.ContextWrapper;
 import android.content.res.Resources;
 import android.support.annotationox.StyleRes;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 import android.view.LayoutInflater;
 
 /**

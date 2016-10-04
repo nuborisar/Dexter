@@ -19,7 +19,7 @@ package android.support.v7ox.widget;
 import android.content.Context;
 import android.os.Build;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 import android.support.v7ox.view.ActionMode;
 import android.support.v7ox.view.menu.MenuBuilder;
 import android.text.TextUtils;

@@ -25,7 +25,7 @@ import android.os.Build;
 import android.support.annotationox.NonNull;
 import android.support.v4ox.view.ViewCompat;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 
 import android.util.AttributeSet;
 import android.view.View;

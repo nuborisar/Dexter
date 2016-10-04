@@ -20,7 +20,7 @@ import android.content.res.TypedArray;
 import android.os.Build;
 import android.support.v4ox.view.ViewCompat;
 //import android.support.v7ox.appcompat.R;
-import com.karumi.dexter.R;
+import com.karumi.dexterox.R;
 import android.util.AttributeSet;
 import android.view.Gravity;
 import android.view.View;
